@@ -12,6 +12,7 @@ body{
     z-index: 1;
 
     height: 100vh;
+    width:100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -83,9 +84,9 @@ header>#login_page>p{
 
 .container{
     flex-grow: 1;/*head_cont 에 대한 flex-grow*/
-
     border : 2px solid silver;
     /*height: 85vh;*/
+    /* width: 100vw; */
     overflow: hidden;
     display: flex;
 }
@@ -214,6 +215,9 @@ header>#login_page>p{
     flex-grow: 1;
     text-align: center;
     overflow-y: scroll;
+
+
+    padding-left:8px;
 
 }
 

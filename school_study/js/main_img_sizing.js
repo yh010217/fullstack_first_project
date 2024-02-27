@@ -10,13 +10,16 @@ let sizing = function(){
     }
 
     for(let i = 0 ; i < img_width.length ; i++){
-        if(img_width[i] > main_width-20){
-            img_select[i].className='img_width100';
-        }
-        
+
         if(img_height[i] > main_height-20){
-            
             img_select[i].className='img_height100';
+        }
+
+        if(img_width[i] > main_width){
+            img_select[i].className='img_width100';
+            if(img_height[i] > main_height-20){
+                img_select[i].className='img_height100';
+            }
         }
 
     }
