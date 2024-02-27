@@ -49,6 +49,7 @@ header{
 }
 header>nav{
     display: inline-block;
+
     width : 70%;
 }
 header>nav>ul{
@@ -229,14 +230,21 @@ header>#login_page>p{
 
 .container>#main_section>.main_section_img_wrap{
     display: inline-block;
+
     height: 100%;
     width:100%;
+    
 }
 .container>#main_section>.main_section_img_wrap>img{
     display: inline-block;
+}
+.img_height100{
     height: 100%;
-    max-width: 100%;
-    object-fit: cover;
+    width:auto;
+}
+.img_width100{
+    width:100%;
+    height:auto;
 }
 
 
