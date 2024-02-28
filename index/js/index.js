@@ -156,6 +156,32 @@ document.addEventListener("DOMContentLoaded", function() {
     /* 메뉴 보여주는 코드 끝 */
 
 
+    /*리뷰 섹션 코드 시작*/
+    const rv_btn1= document.getElementById('review_nav1');
+    const rv_btn2= document.getElementById('review_nav2');
+    const rv_btn3= document.getElementById('review_nav3');
+    const rv_section1 = document.getElementById('rs_1');
+    const rv_section2 = document.getElementById('rs_2');
+    const rv_section3 = document.getElementById('rs_3');
+
+    rv_btn1.addEventListener('click', function () {
+        rv_section1.setAttribute('style','display: flex; justify-content: space-evenly');
+        rv_section2.setAttribute('style','display: none');
+        rv_section3.setAttribute('style','display: none');
+    });
+    rv_btn2.addEventListener('click', function () {
+        rv_section2.setAttribute('style','display: flex; justify-content: space-evenly');
+        rv_section1.setAttribute('style','display: none');
+        rv_section3.setAttribute('style','display: none');
+    });
+    rv_btn3.addEventListener('click', function () {
+        rv_section3.setAttribute('style','display: flex; justify-content: space-evenly');
+        rv_section1.setAttribute('style','display: none');
+        rv_section2.setAttribute('style','display: none');
+    });
+    /*리뷰 섹션 코드 끝*/
+
+
     /* 자동 슬라이더 코드 시작 */
     // 슬라이크 전체 크기(width 구하기)
     const slide = document.querySelector(".slide");
