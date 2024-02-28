@@ -415,6 +415,66 @@
     }
     /*다섯번째 빙산판 끝*/
 
+
+    /*리뷰 콘텐츠 CSS 시작*/
+    #review_wrap{
+        margin: 0 auto;
+        text-align: center;
+    }
+    #review_wrap nav{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #review_wrap ul li{
+        display: inline-block;
+    }
+    #review_wrap ul li a{
+        display: block;
+        width: 100px;
+        text-decoration: none;
+        background: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    #review_wrap ul li a:hover{
+        background: white;
+        color: blue;
+    }
+
+    #rs_2, #rs_3{
+        display: none;
+    }
+    .review_view{
+        width: auto;
+        height: auto;
+    }
+    .review_section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .review_section a{
+        margin: 10px;
+    }
+    .review_section img{
+        border-radius: 10px 10px 0 0;
+    }
+    .review_section h3{
+        position: relative;
+        top:-4px;
+        background: white;
+        padding: 5px;
+        border-radius: 0 0 10px 10px;
+        margin: 0 10px 0 10px;
+    }
+    /*리뷰 콘텐츠 CSS 끝*/
+
+
+
     /* 슬라이드 홍보 콘텐츠 CSS 시작 */
     .boundary2 {
         width: 100%;
@@ -439,6 +499,10 @@
         margin: 0 auto;
         /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
         user-select: none;
+    }
+    .slide a{
+        text-decoration: none;
+        color: black;
     }
     .slide_item {
         display: flex;
@@ -472,8 +536,18 @@
     .slide_prev_button {
         left: 10px;
     }
+    .slide_prev_button a{
+        position: relative;
+        left: -1px;
+        top: -2px;
+    }
     .slide_next_button {
         right: 10px;
+    }
+    .slide_next_button a{
+        position: relative;
+        left: 1px;
+        top: -2px;
     }
 
     /* 페이지네이션 스타일 */
