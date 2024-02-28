@@ -702,6 +702,8 @@
     /* 푸터 영역 시작 */
     footer{
         background: rgb(6,18,66);
+        position: relative;
+        z-index: 20;
         color: whitesmoke;
         font-family: omyu-pretty, malgun_gothic, serif;
     }
