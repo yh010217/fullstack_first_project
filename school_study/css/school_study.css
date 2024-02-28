@@ -176,7 +176,7 @@ header>#login_page>p{
     display: flex;
     align-items: center;
 }
-.container>.inner_tab_wrap>.inner_tab>nav>ul>li a{
+.container>.inner_tab_wrap>.inner_tab>nav>ul>li>a{
     color: black;
     font-weight: 900;
     font-size: 0.8rem;
