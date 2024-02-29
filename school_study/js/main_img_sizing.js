@@ -9,8 +9,8 @@ let img_list = document.querySelectorAll('.container>#main_section>.main_section
 let last_img = img_list[img_list.length - 1];
 
 last_img.addEventListener("load", () => {
+    console.log('load');
     let load_function = () => {
-
         let main_width = main.offsetWidth;
         let main_height = main.offsetHeight;
 
