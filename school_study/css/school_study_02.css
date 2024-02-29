@@ -225,11 +225,12 @@ header > #login_page > p {
 }
 
 .section_slide_window > .slide_slide .slide_slide_content {
-    height: 100%;
-    width: 300vw;
+    height: 97%;
+    width: 4000px;
     position:relative;
     transition-duration: 1s;
     display: inline-block;
+    border: 1px solid red;
 }
 
 .section_slide_window > .slide_slide .slide_slide_content img {
