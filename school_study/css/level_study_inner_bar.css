@@ -1,0 +1,34 @@
+#main_section .level_inner_bar{
+    position: absolute;
+    list-style: none;
+    display: inline-block;
+    border-radius: 2rem;
+    border:1px solid silver;
+    padding:0;
+
+    transition-duration: 1s;
+}
+#main_section .level_inner_bar li{
+    padding:0.5rem 0.8rem;
+    display: inline-block;
+}
+#main_section .level_inner_bar li:hover{
+    border-radius: 2rem;
+    background-color: #7fb5ff;
+}
+
+#main_section .level_inner_bar li a{
+    color: #6a6a6a;
+    text-decoration: none;
+}
+
+
+
+.showBar{
+    top:70px;
+    visibility: visible;
+}
+.hideBar{
+    top:0;
+    visibility: hidden;
+}
