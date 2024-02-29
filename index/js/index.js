@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         this.y = Math.random() * canvasHeight;
         this.vx = Math.random() * 4 - 1;
         this.vy = Math.random() * 4 + 1;
-        this.color = 'rgba(109, 246, 234, ' + Math.random() + ')';
+        //this.color = 'rgba(109, 246, 234, ' + Math.random() + ')';
+        this.color = `rgba(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.random()})`;
         this.radius = Math.random() * 5 + 2;
     }
 
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //첫번째 서브메뉴 탭에서 마우스가 올라가면 첫번째 메인메뉴 속성 지정
     subMenu1.addEventListener('mouseover', function () {
-        mainMenu1.setAttribute('style', 'color:blue; border-bottom: 3px solid blue');
+        mainMenu1.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216)');
     }, false);
     //첫번째 서브메뉴 탭에서 마우스가 떠나면 첫번째 메인메뉴 속성 제거
     subMenu1.addEventListener('mouseleave', function () {
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //두번째 서브메뉴 탭에서 마우스가 올라가면 두번째 메인메뉴 속성 지정
     subMenu2.addEventListener('mouseover', function () {
-        mainMenu2.setAttribute('style', 'color:blue; border-bottom: 3px solid blue');
+        mainMenu2.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216);');
     }, false);
     //두번째 서브메뉴 탭에서 마우스가 떠나면 두번째 메인메뉴 속성 제거
     subMenu2.addEventListener('mouseleave', function () {
@@ -115,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //세번째 서브메뉴 탭에서 마우스가 떠나면 세번째 메인메뉴 속성 제거
     subMenu3.addEventListener('mouseover', function () {
-        mainMenu3.setAttribute('style', 'color:blue; border-bottom: 3px solid blue');
+        mainMenu3.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216);');
     }, false);
     //세번째 서브메뉴 탭에서 마우스가 떠나면 세번째 메인메뉴 속성 제거
     subMenu3.addEventListener('mouseleave', function () {
@@ -154,6 +155,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     /* 메뉴 보여주는 코드 끝 */
+
+    /*모바일 메뉴 보여주는 코드 시작*/
+    const mobile_menu_btn = document.getElementById('mobile_menu_btn');
+    const mobile_menu = document.getElementById('mobile_menu');
+    mobile_menu_btn.addEventListener('click', function() {
+        if (mobile_menu.style.display === 'block') {
+            mobile_menu.style.display = 'none';
+        } else {
+            mobile_menu.style.display = 'block';
+        }
+    });
+    /*모바일 메뉴 보여주는 코드 끝*/
 
 
     /*리뷰 섹션 코드 시작*/
