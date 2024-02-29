@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: omyu-pretty, cookie-run-bold, malgun_gothic, serif;
+}
+
+@font-face {
+    font-family: 'cookie-run-black';
+    src: url("../../index/font/CookieRunBlack.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-bold';
+    src: url("../../index/font/CookieRunBold.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-regular';
+    src: url("../../index/font/CookieRunRegular.ttf");
+}
+
+@font-face {
+    font-family: 'omyu-pretty';
+    src: url("../../index/font/omyuPretty.ttf");
+}
+@media screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape){
+    /* 헤더 부분 CSS 시작 */
+    header, .main_menu ul, #logo a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo{
+        margin: 10px;
+    }
+    #logo img{
+        width: 80px;
+        height: 25px;
+    }
+    #logo a{
+        position: relative;
+        top: 5px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+    }
+    #logo p{
+        padding: 4px 0 0 5px;
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: omyu-pretty, cookie-run-bold, malgun_gothic, serif;
+        color: rgb(1,140,209);
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        padding-bottom: 10px;
+        background: white;
+        box-shadow: 0 -10px 20px 10px lightgray;
+        z-index: 100;
+    }
+    #mobile_btn{
+        display: none;
+    }
+    #mobile_menu{
+        display: none;
+    }
+    .main_menu li{
+        list-style: none;
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+    .main_menu a{
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 10px 10px 16px 10px;
+    }
+    .main_menu a:hover{
+        color: rgb(30,67,216);
+        border-bottom: 4px solid rgb(30,67,216);
+    }
+
+    .margin_div{
+        width: 85px;
+    }
+
+    /* 헤더 부분 CSS 끝 */
+
+    /* 서브 메뉴 CSS 시작 */
+    .sub_menu_view {
+        position: fixed;
+        display: none;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        z-index: 90;
+    }
+    .sub_menu_view.slideDown {
+        animation: slideDownAnimation 0.5s ease forwards;
+    }
+    @keyframes slideDownAnimation {
+        from {
+            top: -100px; /* 시작 위치: 위쪽에서 아래로 */
+        }
+        to {
+            top: 0; /* 종료 위치: 아래쪽으로 내려가기 */
+        }
+    }
+
+    .sub_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        z-index: 90;
+        background-color: rgba(255,255,255,0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        box-shadow: 0 -10px 20px 10px lightgray;
+        padding: 70px 0 20px 0;
+        text-align: center;
+    }
+    .sub_menu ul{
+        list-style: none;
+    }
+    .sub_menu li{
+        margin-bottom: 10px;
+    }
+    .sub_menu a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        font-weight: bold;
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+    }
+    .sub_menu a:hover{
+        color: rgb(30,67,216);
+    }
+    #sub_menu1{
+        position: relative;
+        left: -123px;
+    }
+
+    #sub_menu2{
+        position: relative;
+        left: -85px;
+    }
+    #sub_menu3{
+        position: relative;
+        left: -34px;
+    }
+    /* 서브 메뉴 CSS 끝 */
+
+    /* 메인 페이지 CSS 시작 */
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    main section {
+        background-color: #f8f9fa;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    main section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    main section form {
+        margin-top: 20px;
+    }
+
+    main section form ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    main section form ul li {
+        margin-bottom: 15px;
+    }
+
+    main section form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    main section form input[type="text"],
+    main section form input[type="password"] {
+        width: calc(100% - 60px);
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    main section form button {
+        width: calc(100% - 60px);
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    main section form button:hover {
+        background-color: #0056b3;
+    }
+
+    main section form a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    main section form a:hover {
+        text-decoration: underline;
+    }
+
+    main section img {
+        max-width: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    /* 메인 페이지 CSS 끝 */
+
+
+
+    /* 푸터 영역 시작 */
+    footer{
+        padding: 30px 0 30px 10px;
+        position: relative;
+        text-align: center;
+        top:93vh;
+        z-index: 20;
+    }
+    footer p{
+        font-size: 11px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+    }
+    /* 푸터 영역 끝 */
+}
