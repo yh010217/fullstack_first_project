@@ -1,0 +1,106 @@
+
+#container{
+    position: fixed;
+    top: 30%;
+width: 100vw;
+    height: 80vh;
+    border-radius: 10%;
+}
+.subList_ul{
+    display: none;
+}
+.mainList{
+    position: relative;
+    left: 10vw;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    top: -10vh;
+}
+.subList_ul{
+    background-color: rgb(0, 204, 255);
+    border-radius: 10%;
+}
+.subList_ul.a:active{
+     color: white;
+}
+.subList_ul li{
+    background-color: rgb(0, 204, 255);
+}
+.mainList a{
+    text-decoration: none;
+}
+.mainList li span {
+    font-weight: bold;
+    background-color: rgb(0, 204, 255);
+    border-radius:10%;
+    padding: 5px;
+    display: inline-block;
+    width: 6vw;
+    font-size: 0.7vw;
+}
+.subList_li{
+    font-size: 0.8vw;
+    border-radius:10%;
+    text-decoration: none;
+    margin-top: 0.21vh;
+}
+.mainList li {
+    list-style: none;
+    width: 8vw;
+}
+#postSec>h2{
+    position: relative;
+    left: 50vw;
+}
+#img img{
+    float: left;
+    width: 15vw;
+    height: 45vh;
+    margin-top: 10vh;
+}
+#postBack1{
+    background-color: rgb(233, 236, 207);
+    width: 32.5vw;
+    height: 50vh;
+    position: relative;
+    left: 25vw;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-right: 1px solid black;
+}
+.postList1{
+    position: relative;
+    left: -12vw;
+}
+.download{
+    position: relative;
+    left: 10vw;
+}
+.postList1 li{
+    margin-top: 5vh;
+    list-style: none;
+    border-top: 1px black;
+}
+#postHead{
+    position: relative;
+    left: -8.5vw;
+    margin: 50px;
+}
+#postHead li{
+    margin-top: 3vh;
+    list-style: none;
+}
+#headCheck{
+    position: relative;
+    left: -2vw;
+}
+#postBack1 img{
+    width: 3vw;
+    height: 3vh;
+}
+#postImg li{
+    border: 1px solid silver;
+}
+
+

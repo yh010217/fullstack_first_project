@@ -1,0 +1,175 @@
+/* #container{
+    
+    position: relative;
+    top: 300px;
+    width: 97vw;
+    
+    background-color: #e0fbff;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+.subList_ul{
+    display: none;
+}
+.mainList{
+    border: 6px solid red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.subList_ul{
+    background-color: rgb(61, 118, 133);
+    border-radius: 10%;
+}
+.subList_ul.a:active{
+     color: white;
+}
+.subList_ul li{
+    background-color: rgb(0, 204, 255);
+}
+.mainList a{
+    text-decoration: none;
+}
+.mainList li span {
+    font-weight: bold;
+    background-color: rgb(0, 204, 255);
+    border-radius:10%;
+    padding: 5px;
+    display: inline-block;
+    width: 6vw;
+    font-size: 0.7vw;
+}
+.subList_li{
+    font-size: 0.8vw;
+    border-radius:10%;
+    text-decoration: none;
+    margin-top: 0.21vh;
+}
+.mainList li {
+    list-style: none;
+    width: 8vw;
+}
+#container>h2{
+    position: relative;
+    top: 5vh;
+    left: 60vw;
+}
+#img img{
+    float: left;
+    width: 15vw;
+    height: 45vh;
+    margin-top: 10vh;
+   
+}
+#studyMainTable{
+    margin-top: -40vh;
+    margin-left: 45vw;
+    border-collapse: collapse;
+    border: solid silver 1px;
+    width: 42vw;
+    height: 40vh;
+}
+.taBtn a{
+    text-decoration: none;
+}
+#art{
+    display: flex;
+    justify-content: space-between;
+}
+.studyTh{
+    background-color: silver;
+}
+#studyMainTable th,td{
+    padding: 4px;
+    border-bottom: 1px solid silver;
+    font-size: 0.8rem;
+}
+#pageImg{
+    position: relative;
+    left: 20vw;
+    top: -20vh;
+    }
+.postBtn{
+    background-color: rgb(206, 212, 218);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+#studyForm{
+    position: relative;
+    left: 20vw;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 10vh;
+    background-color: #e9ecef;
+}
+
+
+.formTxt{
+    font-weight: bold;
+    position: relative;
+    left :-13vw;
+    top: 5vh;
+    display: inline-block;
+}
+#graSel{
+    position:relative;
+    top: 3px;
+    left: -10vw;
+    border-style: none
+}
+#uni{
+    position: relative;
+    top: 10vh;
+
+}
+#uniSel{
+    position: relative;
+    top: -21vh;
+    left: 2vw;
+    border-style: none
+}
+#seaSel{
+    position: relative;
+    top: -2vh;
+    border-style: none
+}
+#seaId{
+    position: relative;
+    left: -5vw
+}
+#fDown{
+    position: relative;
+    left: 0.5vw;
+    top: 0.3vh;
+    background-color: rgb(0, 204, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+}
+#lDown{
+    position: relative;
+    top: 2.7vh;
+    left: -3.5vw;
+}
+#studyL{
+    position: relative;
+    left: -9vw;
+    top: -15vh;
+}
+#text{
+    position: relative;
+    top: -13vh;
+    left: 1.8vw;
+}
+#search{
+    position: relative;
+    top: -12.8vh;
+    left: 5vw;
+    width: 1.7vw;
+    height: 1.7vh;
+} */
