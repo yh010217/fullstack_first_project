@@ -12,6 +12,7 @@ body{
     z-index: 1;
 
     height: 100vh;
+    width:100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -49,6 +50,7 @@ header{
 }
 header>nav{
     display: inline-block;
+
     width : 70%;
 }
 header>nav>ul{
@@ -82,9 +84,9 @@ header>#login_page>p{
 
 .container{
     flex-grow: 1;/*head_cont 에 대한 flex-grow*/
-
     border : 2px solid silver;
     /*height: 85vh;*/
+    /* width: 100vw; */
     overflow: hidden;
     display: flex;
 }
@@ -174,7 +176,7 @@ header>#login_page>p{
     display: flex;
     align-items: center;
 }
-.container>.inner_tab_wrap>.inner_tab>nav>ul>li a{
+.container>.inner_tab_wrap>.inner_tab>nav>ul>li>a{
     color: black;
     font-weight: 900;
     font-size: 0.8rem;
@@ -214,6 +216,9 @@ header>#login_page>p{
     text-align: center;
     overflow-y: scroll;
 
+
+    padding-left:8px;
+
 }
 
 .container>#main_section::-webkit-scrollbar{
@@ -229,14 +234,21 @@ header>#login_page>p{
 
 .container>#main_section>.main_section_img_wrap{
     display: inline-block;
+
     height: 100%;
     width:100%;
+    
 }
 .container>#main_section>.main_section_img_wrap>img{
     display: inline-block;
+}
+.img_height100{
     height: 100%;
-    max-width: 100%;
-    object-fit: cover;
+    width:auto;
+}
+.img_width100{
+    width:100%;
+    height:auto;
 }
 
 
