@@ -27,7 +27,10 @@
     font-family: 'omyu-pretty';
     src: url("../font/omyuPretty.ttf");
 }
-@media screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape){
+
+@media screen and (min-width: 768px) and (max-width: 1023px),
+screen and (min-height: 760px) and (max-height: 1023px)
+and (orientation: landscape){
     /* 헤더 부분 CSS 시작 */
     header, .main_menu ul, #logo a{
         display: flex;
@@ -73,7 +76,7 @@
     .main_menu li{
         list-style: none;
         margin-top: 15px;
-        margin-right: 50px;
+        margin-right: 30px;
     }
     .main_menu a{
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
@@ -151,7 +154,7 @@
     .sub_menu a{
         text-decoration: none;
         color: rgba(0, 0, 0, 0.5);
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bold;
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
     }
@@ -160,16 +163,16 @@
     }
     #sub_menu1{
         position: relative;
-        left: -123px;
+        left: -87px;
     }
 
     #sub_menu2{
         position: relative;
-        left: -85px;
+        left: -65px;
     }
     #sub_menu3{
         position: relative;
-        left: -34px;
+        left: -30px;
     }
     /* 서브 메뉴 CSS 끝 */
 
@@ -337,6 +340,10 @@
         display: flex;
         flex-direction: row;
     }
+    .subject_img{
+        width: 280px;
+        height: auto;
+    }
 
     .subject_content section{
         margin: 3vw;
@@ -355,7 +362,8 @@
     }
     .subject_desc{
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
-        font-size: 21px;
+        white-space: nowrap;
+        font-size: 20px;
         font-weight: bold;
         color: rgb(0, 0, 0, 0.7);
 
@@ -578,12 +586,12 @@
         box-shadow: 5px 5px 5px 5px lightgray;
         padding: 5px;
         border-radius: 0 0 10px 10px;
-        margin: 0 10px 0 10px;
+        margin: 0 10px 20px 10px;
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
     }
     /*리뷰 콘텐츠 CSS 끝*/
 
-
+    /* 슬라이드 홍보 콘텐츠 CSS 시작 */
     #outro_content_section h1{
         font-weight: bolder;
         margin-bottom: 40px;
@@ -595,8 +603,8 @@
         position: relative;
         overflow: hidden;
 
-        width: 700px;
-        height: 500px;
+        width: 600px;
+        height: 400px;
         margin: 0 auto;
         /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
         user-select: none;
@@ -613,8 +621,8 @@
         transition: left 0.15s;
     }
     .slide_item img{
-        width: 700px;
-        height: 500px;
+        width: 600px;
+        height: 400px;
         border-radius: 30px;
     }
     .slide_button {

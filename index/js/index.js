@@ -156,6 +156,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /* 메뉴 보여주는 코드 끝 */
 
+    /*모바일 메뉴 보여주는 코드 시작*/
+    const mobile_menu_btn = document.getElementById('mobile_menu_btn');
+    const mobile_menu = document.getElementById('mobile_menu');
+    mobile_menu_btn.addEventListener('click', function() {
+        if (mobile_menu.style.display === 'block') {
+            mobile_menu.style.display = 'none';
+        } else {
+            mobile_menu.style.display = 'block';
+        }
+    });
+    /*모바일 메뉴 보여주는 코드 끝*/
+
 
     /*리뷰 섹션 코드 시작*/
     const rv_btn1= document.getElementById('review_nav1');
