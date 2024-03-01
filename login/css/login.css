@@ -185,7 +185,7 @@
         height: 280px;
         position: absolute;
         top: -100px;
-        left: -160px;
+        left: -180px;
         border-radius: 30px;
     }
 
@@ -196,7 +196,7 @@
     #start_main form{
         position: absolute;
         top:-80px;
-        left: -45px;
+        left: -65px;
         font-family: omyu-pretty, malgun_gothic, serif;
         font-size: 24px;
         font-weight: bolder;
@@ -210,7 +210,6 @@
         padding: 0 0 10px 0;
     }
     #start_main h2{
-        left: 20px;
         top: -250px;
         font-size: 30px;
         color: rgba(255, 255, 255, 0.6);
@@ -218,7 +217,7 @@
     }
     #start_main h1{
         top: -200px;
-        left: -190px;
+        left: -210px;
         font-size: 40px;
         color: whitesmoke;
         font-family: cookie-run-regular, malgun_gothic, serif;
@@ -248,15 +247,21 @@
         font-size: 24px;
         font-weight: lighter;
     }
+    #login_btn:hover{
+        background-color: rgb(50,87,236);
+    }
     #register_btn{
         position: relative;
-        left: 83px;
+        left: 82px;
         font-size: 20px;
+    }
+    #register_btn:hover{
+        color: rgb(50,87,236);
     }
 
     form img{
         position: relative;
-        left: -190px;
+        left: -200px;
         top: 150px;
         width: 600px;
         z-index: -1;
