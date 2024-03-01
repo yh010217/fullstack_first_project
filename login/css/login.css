@@ -155,12 +155,17 @@
         position: relative;
         left: -34px;
     }
+    #mobile_menu{
+        display: none;
+    }
     /* 서브 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
+
+
     main {
         position: absolute;
-        top: 50%;
+        top: 430px;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -244,10 +249,8 @@
 
     /* 푸터 영역 시작 */
     footer{
-        padding: 30px 0 30px 10px;
         position: relative;
         text-align: center;
-        top:93vh;
         z-index: 20;
     }
     footer p{
@@ -255,4 +258,6 @@
         font-family: omyu-pretty, malgun_gothic, serif;
     }
     /* 푸터 영역 끝 */
+
+
 }

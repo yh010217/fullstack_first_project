@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-#wrap{
-    background: rgb(6,18,66);
-}
-
 @font-face {
     font-family: 'cookie-run-black';
     src: url("../../index/font/CookieRunBlack.ttf");
@@ -183,12 +179,13 @@ and (orientation: landscape){
     /* 푸터 영역 시작 */
     footer{
         padding: 30px 0 30px 10px;
-        background: rgb(6,18,66);
         position: relative;
+        text-align: center;
+        top:93vh;
         z-index: 20;
-        color: whitesmoke;
     }
     footer p{
+        font-size: 11px;
         font-family: omyu-pretty, malgun_gothic, serif;
     }
     /* 푸터 영역 끝 */

@@ -29,6 +29,7 @@
 
 @media screen  and (max-width: 767px ),
 screen and (max-height: 479px) and (orientation: landscape){
+
     /* 헤더 부분 CSS 시작 */
     header, .main_menu ul, #logo a{
         display: flex;
@@ -40,12 +41,11 @@ screen and (max-height: 479px) and (orientation: landscape){
         margin: 10px;
     }
     #logo img{
-        width: 80px;
-        height: 25px;
+        width: 60px;
     }
     #logo a{
         position: relative;
-        top: 5px;
+        top: 4px;
         white-space: nowrap;
         text-decoration: none;
         color: black;
@@ -74,16 +74,16 @@ screen and (max-height: 479px) and (orientation: landscape){
     }
 
     #mobile_btn{
-        position: relative;
-        top: 8px;
-        right: 8px;
+        position: absolute;
+        top: 15px;
+        right: 10px;
     }
     #mobile_login_btn img{
-        width: 35px;
+        width: 25px;
         margin-right: 3px;
     }
     #mobile_menu_btn{
-        width: 35px;
+        width: 25px;
     }
 
     /* 헤더 부분 CSS 끝 */
@@ -98,23 +98,25 @@ screen and (max-height: 479px) and (orientation: landscape){
         position: fixed;
         right: 5px;
         top: 60px;
-        background: whitesmoke;
+        background: white;
         border-radius: 10px;
-        width: 140px;
+        width: 120px;
         z-index: 80;
         box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
     }
     #mobile_menu ul li{
+        list-style: none;
         text-align: left;
     }
     #mobile_menu ul li a{
         display: inline-block;
-        width: 130px;
+        width: 110px;
         text-decoration: none;
         padding: 7px 0 7px 10px;
         color: rgb(6,18,66);
-        font-family: cookie-run-regular, omyu-pretty, malgun_gothic, serif;
-        font-size: 18px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        font-size: 16px;
+        font-weight: bold;
     }
     #mobile_menu ul li a:active{
         color: rgb(1,140,209);
@@ -141,58 +143,39 @@ screen and (max-height: 479px) and (orientation: landscape){
         white-space: nowrap;
     }
     #start_main h4{
-        left: -160px;
-        top: -230px;
-        font-size: 20px;
+        left: -120px;
+        top: -220px;
+        font-size: 12px;
         color: rgba(255, 255, 255, 0.6);
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
     #start_main h1{
         top: -200px;
-        left: -170px;
-        font-size: 45px;
+        left: -130px;
+        font-size: 35px;
         color: whitesmoke;
         font-family: cookie-run-regular, malgun_gothic, serif;
     }
 
     #start_main a{
-        left: -30px;
-        top: -60px;
+        left: -35px;
+        top: -80px;
         color: white;
         background: rgb(30,67,216);
         text-decoration: none;
         padding: 15px;
         border-radius: 30px;
         font-family: cookie-run-regular, malgun_gothic, serif;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: lighter;
     }
 
     #start_main_character{
-        left: -130px;
+        left: -120px;
         top: 10px;
-        width: 350px;
-        height: 450px;
+        width: 300px;
     }
 
-    @keyframes motion_effect{/*통통 떠오르는 애니메이션 - 필요하면 사용하기*/
-        /* 필요한 요소에 쓰기 => animation: motion_effect 1.5s linear 0s infinite alternate;*/
-        0%,100%{
-            transform:translate(-50%,-50%);
-        }
-        50%{
-            transform:translate(-50%,-60%);
-        }
-    }
-
-    #start_main_bg{
-        transform: rotate(180deg);
-        left: -270px;
-        top: -380px;
-        width: 600px;
-        height: 600px;
-        opacity: 0.7;
-    }
     .snow{
         position: fixed;
         top:-2px;
@@ -204,12 +187,11 @@ screen and (max-height: 479px) and (orientation: landscape){
     .boundary {
         border-radius: 50px 50px 0 0;
         width: 100%;
-        height: 150px;
+        height: 130px;
         background-image:url('../img/쌓인눈_경계.png');
         background-repeat: repeat-x;
     }
     main{
-        /*background: rgba(173, 216, 230, 0.5);*/
         background: rgb(66,147,212);
         position: relative;
         padding-bottom: 30px;
@@ -249,7 +231,7 @@ screen and (max-height: 479px) and (orientation: landscape){
     }
 
     .intro_content_semi_title{
-        font-size: 17px;
+        font-size: 13px;
         font-family: cookie-run-regular, malgun_gothic, serif;
         color: rgb(158, 158, 158);
         font-weight: lighter;
@@ -264,13 +246,13 @@ screen and (max-height: 479px) and (orientation: landscape){
 
     .intro_content_title, .intro_content_title span{
         margin: 0 auto;
-        width: 300px;
-        font-size: 30px;
+        width: 280px;
+        font-size: 28px;
         font-family: cookie-run-bold, omyu-pretty, malgun_gothic, serif;
     }
 
     #intro_content1_img{
-        width: 300px;
+        width: 280px;
         height: auto;
     }
 
@@ -278,7 +260,9 @@ screen and (max-height: 479px) and (orientation: landscape){
         font-family: omyu-pretty, cookie-run-bold, malgun_gothic, serif;
     }
     .intro_content_desc{
-        font-size: 17px;
+        font-size: 18px;
+        width: 280px;
+        margin: 0 auto;
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
     }
 
@@ -314,7 +298,6 @@ screen and (max-height: 479px) and (orientation: landscape){
     }
     .subject_desc{
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
-        white-space: nowrap;
         font-size: 18px;
         font-weight: bold;
         color: rgb(0, 0, 0, 0.7);
@@ -342,13 +325,14 @@ screen and (max-height: 479px) and (orientation: landscape){
         color: white;
         border-radius: 15px;
         margin-bottom: 40px;
-        font-size: 20px;
+        width: 230px;
+        font-size: 18px;
         font-family: cookie-run-bold, malgun_gothic, serif;
         font-weight: lighter;
     }
     #intro_content_section3>div>h3{
         display: inline-block;
-        padding: 10px;
+        padding: 8px;
         background-color: rgb(30,67,216);
         color: white;
         border-radius: 30px;
@@ -403,7 +387,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         padding: 1vw 2vw 0 2vw;
     }
     .subject_math_content #math5, #math6{
-        width: 300px;
+        width: 290px;
     }
     .subject_math_content h2{
         display: inline-block;
@@ -411,7 +395,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         background-color: rgb(30,67,216,0.7);
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
-        font-size: 18px;
+        font-size: 16px;
         font-family: cookie-run-regular, malgun_gothic, serif;
         font-weight: lighter;
     }
@@ -448,13 +432,14 @@ screen and (max-height: 479px) and (orientation: landscape){
         color: white;
         border-radius: 15px;
         margin-bottom: 10px;
+        width: 230px;
         font-size: 18px;
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
     #english_character{
         position: relative;
         top:4px;
-        width: 170px;
+        width: 160px;
     }
     #intro_content_section4 section h3{
         background-color: orange;
@@ -476,6 +461,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         color: white;
         border-radius: 15px;
         margin-bottom: 10px;
+        width: 230px;
         font-size: 18px;
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
@@ -510,6 +496,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         background: rgba(30,67,216,0.7);
         color: white;
         padding: 10px;
+        margin: 5px;
         border-radius: 30px;
         text-align: center;
         font-family: cookie-run-regular, malgun_gothic, serif;
@@ -562,10 +549,12 @@ screen and (max-height: 479px) and (orientation: landscape){
         display: flex;
         flex-wrap: nowrap;
         position: relative;
+        left: 5px;
         overflow: hidden;
+        border-radius: 30px;
 
-        width: 350px;
-        height: 250px;
+        width: 280px;
+        height: 200px;
         margin: 0 auto;
         /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
         user-select: none;
@@ -582,7 +571,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         transition: left 0.15s;
     }
     .slide_item img{
-        width: 350px;
+        width: 280px;
         height: auto;
         border-radius: 30px;
     }
@@ -595,8 +584,8 @@ screen and (max-height: 479px) and (orientation: landscape){
         /* 버튼이 중앙에 위치하게 하기위해 계산 */
         top: calc(50% - 16px);
 
-        width: 22px;
-        height: 22px;
+        width: 15px;
+        height: 15px;
 
         border-radius: 100%;
         background-color: #cccc;
@@ -607,8 +596,8 @@ screen and (max-height: 479px) and (orientation: landscape){
         left: 10px;
     }
     .slide_prev_button img{
-        width: 32px;
-        height: 32px;
+        width: 22px;
+        height: 22px;
     }
     .slide_prev_button a{
         position: relative;
@@ -619,8 +608,8 @@ screen and (max-height: 479px) and (orientation: landscape){
         right: 10px;
     }
     .slide_next_button img{
-        width: 32px;
-        height: 32px;
+        width: 22px;
+        height: 22px;
     }
     .slide_next_button a{
         position: relative;
@@ -667,16 +656,15 @@ screen and (max-height: 479px) and (orientation: landscape){
 
     /* 푸터 영역 시작 */
     footer{
-        padding: 0 0 30px 10px;
+        padding: 30px 15px 30px 15px;
         background: rgb(6,18,66);
         position: relative;
         z-index: 20;
         color: whitesmoke;
     }
     footer p{
-        font-family: omyu_pretty, malgun_gothic, serif;
+        font-family: omyu-pretty, malgun_gothic, serif;
         font-size: 10px;
-        margin-bottom: 5px;
     }
     /* 푸터 영역 끝 */
 
