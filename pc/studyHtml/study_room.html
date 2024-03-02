@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../studyCss/kyusub.css">
+    <link rel="stylesheet" href="../index/css/index.css">
+    <link rel="stylesheet" href="../index/css/index_mobile.css">
+    <link rel="stylesheet" href="../index/css/index_tablet.css">
+    <link rel="stylesheet" href="../studyCss/menu_tab.css">
+    <script defer src="../studyJs/study_room.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="../studyImg/milkT_logo.webp" alt="밀크티 로고">
+                    <p>초등</p>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">AiGenia</a></li>
+                <li><a href="#">학교공부</a></li>
+                <li><a href="#">수준별 국·영·수</a></li>
+                <li><a href="#">학습자료실</a></li>
+            </ul>
+
+            <a href="#">가입·로그인</a>
+        </header>
+    </div>
+
+
+    <div id="container">
+        <div class="mainList pc">
+            <ul class="main_ul">
+                <li id="subListId1" class="subList"><a class="aTag" href="#">밀크T전용교재</a>
+                    <ul class="subList_ul">
+                        <li class="subList_li">
+                            <a href="#">개념암기노트</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">수학익힘책</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">기초연산</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">서술형Why</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">빅데이터</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">전용교재스케쥴</a>
+                        </li>
+                        <li class="subList_li">
+                            <a href="#">밀크Tit북</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="subListId2" class="subList"><a class="aTag" href="#">실력평가</a>
+                    <ul class="subList_ul">
+                        <li class="subList_li"><a href="#">수행평가</a></li>
+                    </ul>
+                </li>
+
+                <li id="subListId3" class="subList"><a class="aTag" href="#">수준별영어</a>
+                    <ul class="subList_ul">
+                        <li class="subList_li"> <a href="#">AI스피킹</a></li>
+                        <li class="subList_li"> <a href="#">콕콕Listening</a></li>
+                        <li class="subList_li"> <a href="#">술술Speaking</a></li>
+                        <li class="subList_li"> <a href="#">쏙쏙Words</a></li>
+                        <li class="subList_li"> <a href="#">팡팡Phonics</a></li>
+                        <li class="subList_li"> <a href="#">줄줄Reading</a></li>
+                        <li class="subList_li"> <a href="#">탄탄Grammar</a></li>
+                        <li class="subList_li"> <a href="#">영어Library</a></li>
+                    </ul>
+                </li>
+
+
+                <li id="subListId4" class="subList"><a class="aTag" href="#">수준별국어</a>
+                    <ul class="subList_ul">
+                        <li id="subList_ul4" class="subList_li"><a href="#">국어받아쓰기</a></li>
+                    </ul>
+                </li>
+
+                <li id="subListId5" class="subList"><a class="aTag" href="#">특별학습</a>
+                    <ul class="subList_ul">
+                        <li class="subList_li"><a href="#">ABC 영어</a></li>
+                        <li class="subList_li"><a href="#">디지털 체험</a></li>
+                        <li class="subList_li"><a href="#">스토리텔링 </a></li>
+                        <li class="subList_li"><a href="#">급수 별한자</a></li>
+                        <li class="subList_li"><a href="#">교과서 한국사</a></li>
+                        <li class="subList_li"><a href="#">한국사능력</a></li>
+                        <li class="subList_li"><a href="#">중국어 HSK</a></li>
+                    </ul>
+                </li>
+
+                <li class="subList"><a class="aTag" href="#">영자신문</a>
+
+                </li>
+            </ul>
+
+        </div>
+        <!--      이미지 및  text 자료 --->
+        <div id="banner">
+            <h2 class="pc">학습 자료실의 내용을 한 눈에 확인 해 보세요 !</h2>
+            <h2 class="mob">학습 자료실</h2>
+            <div class="banner_charbox">
+                <img src="../studyImg/좌측이미지듬이.png" alt="이미지" class="right_char">
+                <img src="../studyImg/좌측이미지도기.png" alt="이미지" class="left_char">
+            </div>
+        </div>
+
+        <!--   table 관련 자료 -->
+        <div id="table">
+            <div>
+                <form id="studyForm">
+                    <div class="form_flexbox">
+                        <div>
+                            <label class="formTxt" for="fCheck" id="aCheck">전체선택</label>
+                            <input type="checkbox" class="formTxt" name="fCheck" id="fCheck">
+                        </div>
+
+                        <div>
+                            <label class="formTxt" id="lDown">다운로드</label>
+                            <a href="#" class="formTxt" id="fDown">다운로드</a>
+                        </div>
+                        <div>
+                            <label class="formTxt" for="graSel">학 년</label>
+                            <select class="formSel" id="graSel">
+                                <option value="'1'">전체</option>
+                                <option value="'2'">1학년</option>
+                                <option value="'3'">2학년</option>
+                                <option value="'4'">3학년</option>
+                                <option value="'5'">4학년</option>
+                                <option value="'6'">5학년</option>
+                                <option value="'7'">6학년</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label id="seaId" class="formTxt" for="seaSel">학 기</label>
+                            <select class="graSel" id="seaSel">
+                                <option value="'1'">전체</option>
+                                <option value="'2'">1학기</option>
+                                <option value="'3'">2학기</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="studyGoal">
+                        <label class="formTxt" for="uniSel">단원명</label>
+
+                        <select id="uniSel">
+                            <option value="전체">전체</option>
+                            <option value="[개념 암기 노트 과학]">개념 암기 노트 과학</option>
+                            <option value="개념암기노트국어">개념 암기 노트 국어</option>
+                            <option value="개념암기노트봄여름">[개념 암기 노트] 봄여름</option>
+                            <option value="개념암기노트">개념암기노트</option>
+                            <option value="개념암기노트 봄여름가을겨울">개념암기노트 봄여름가을겨울</option>
+                            <option value="개념암기노트">전체</option>
+                            <option value="개념암기노트수학">개념암기노트 수학</option>
+                        </select>
+                    </div>
+                    <div class="studyGoal">
+                        <label class="formTxt" for="text">학습내용</label>
+                        <input type="text" id="text" placeholder="내용을 입력해 주세요.">
+                    </div>
+                </form>
+            </div>
+
+
+            <div>
+                <table id="studyMainTable">
+                    <thead class="studyTh">
+                        <tr>
+                            <th>선택</th>
+                            <th>번호</th>
+                            <th>구분</th>
+                            <th>학년</th>
+                            <th>학기</th>
+                            <th>과목</th>
+                            <th>단원명</th>
+                            <th>학습내용</th>
+                            <th>다운로드</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="ch1" class="check"></td>
+                            <td>6</td>
+                            <td>개념암기노트</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>개념암기노트수학</td>
+                            <td>개념암기노트수학</td>
+                            <td>개념암기노트수학1-2</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" class="check"></td>
+                            <td>5</td>
+                            <td>개념암기노트</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>개념암기노트수학</td>
+                            <td>개념암기노트수학</td>
+                            <td>개념암기노트수학1-2</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" class="check"></td>
+                            <td>4</td>
+                            <td>개념암기노트</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>개념암기노트사회</td>
+                            <td>개념암기노트</td>
+                            <td>개념암기노트사회3-2</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" class="check"></td>
+                            <td>3</td>
+                            <td>개념암기노트</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>개념암기노트사회</td>
+                            <td>개념암기노트</td>
+                            <td>개념암기노트사회3-1</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" class="check"></td>
+                            <td>2</td>
+                            <td>개념암기노트</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>개념암기노트사회</td>
+                            <td>개념암기노트</td>
+                            <td>개념암기노트사회4-1</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" class="check"></td>
+                            <td>1</td>
+                            <td>개념암기노트</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>개념암기노트사회</td>
+                            <td>개념암기노트</td>
+                            <td>개념암기노트수학5-1</td>
+                            <td> <a href="#" class="taBtn">다운로드</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--        </div> table-->
+
+    </div>
+
+</body>
+
+</html>

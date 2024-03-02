@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    /*width: 1500px;*/
+    width: 1200px;
+
+    margin: 0 auto;
+}
+
+.mainList {
+    position: relative;
+    padding-top: 130px;
+
+}
+
+
+
+.main_ul {
+    display: flex;
+    text-align: center;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.main_ul>li {
+    /*background-color: #4169E1;*/
+
+    font-weight: bolder;
+
+}
+
+.aTag {
+    background-color: #CCF;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+
+}
+
+/*
+    menu list 세부 내용 보기 속성
+
+ */
+
+#container .subList:hover .subList_ul {
+    display: block;
+    z-index: 10;
+
+}
+
+#container .subList:hover .subList_ul li {
+    z-index: 10;
+}
+
+.subList_ul {
+
+    display: none;
+
+
+}
+
+
+#container .subList_ul li {
+    border: 5px solid rgb(5, 8, 5);
+    /* background-color: #FCF; */
+    background-color: silver;
+    padding: 10px 0;
+
+}
+
+
+
+#banner {
+    background-color: #FCF;
+    width: auto;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#banner .banner_charbox {
+    position: relative;
+
+}
+
+#banner h2 {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #FFF;
+
+}
+
+.banner_charbox img {
+    /*width: 30vw;*/
+    width: 250px;
+    position: relative;
+    top: -130px;
+    left: 10px;
+    z-index: 0;
+
+}
+
+
+.banner_charbox .left_char {
+    position: relative;
+    left: 600px;
+    z-index: 0;
+}
+
+#table {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#studyForm {
+    background-color: #CCC;
+    width: 430px;
+    height: 280px;
+}
+
+form {
+    text-align: center;
+    width: 700px;
+}
+
+#fDown {
+    background-color: #FFFFF0;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.form_flexbox {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form_flexbox div {
+    display: flex;
+    width: 40%;
+    height: 70px;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.form_flexbox div label {
+    margin-right: 20px;
+}
+
+.studyGoal {
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    position: relative;
+    top: -100px;
+}
+
+.formTxt {
+    border: none;
+}
+
+#uniSel {
+    margin-left: 50px;
+}
+
+#text {
+    margin-left: 35px;
+}
+
+.taBtn {
+    background-color: #FFFFF0;
+}
+
+.formTxt {
+    position: relative;
+}
+
+#studyMainTable th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    font-size: 0.8rem;
+}
+
+#studyForm>.form_flexbox div:nth-child(3),
+#studyForm .form_flexbox div:nth-child(4) {
+    position: relative;
+    top: -60px;
+}
+
+
+@media (max-width:480px) {
+
+    /* 모바일용 */
+    body {
+        background-color: #FFF;
+    }
+
+    .pc {
+        display: none !important
+    }
+
+    #container {
+        width: 96%;
+    }
+
+    #banner {
+        background-color: #CFC;
+        height: 200px;
+        overflow: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #banner h2 {
+        text-align: center;
+        padding-top: 90px;
+        letter-spacing: -3px;
+    }
+
+    .banner_charbox img {
+        /*width: 30vw;*/
+        width: 140px;
+        position: relative;
+        top: -5px;
+        left: 0;
+
+    }
+
+    .banner_charbox .right_char {
+        position: absolute;
+        left: 30px;
+    }
+
+    .banner_charbox .left_char {
+        position: absolute;
+        left: 250px;
+    }
+
+    #table {
+        display: block;
+
+    }
+
+    #studyForm {
+        background-color: #CCC;
+        border-radius: 20px;
+        height: 185px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form_flexbox div {
+
+        width: 40%;
+
+        height: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .form_flexbox {
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .studyGoal {
+        padding: 10px;
+
+
+        margin-left: 50px;
+        /* position: relative;
+        top: -100px; */
+    }
+    #lDown{
+        white-space:nowrap;
+    }
+    #fDown {
+        background-color: #FFFFF0;
+        border-radius: 10%;
+        padding: 5px;
+        width: 60px;
+        white-space:nowrap;
+
+    }
+    .formTxt{
+        white-space:nowrap;
+    }
+    #studyMainTable th,
+    td {
+        font-size: 12px;
+        white-space:nowrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:481px) {
+    /*PC용*/
+
+    .mob {
+        display: none
+    }
+}
