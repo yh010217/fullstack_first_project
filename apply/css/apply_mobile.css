@@ -9,22 +9,22 @@
 
 @font-face {
     font-family: 'cookie-run-black';
-    src: url("../font/CookieRunBlack.ttf");
+    src: url("../../index/font/CookieRunBlack.ttf");
 }
 
 @font-face {
     font-family: 'cookie-run-bold';
-    src: url("../font/CookieRunBold.ttf");
+    src: url("../../index/font/CookieRunBold.ttf");
 }
 
 @font-face {
     font-family: 'cookie-run-regular';
-    src: url("../font/CookieRunRegular.ttf");
+    src: url("../../index/font/CookieRunRegular.ttf");
 }
 
 @font-face {
     font-family: 'omyu-pretty';
-    src: url("../font/omyuPretty.ttf");
+    src: url("../../index/font/omyuPretty.ttf");
 }
 
 @media screen  and (max-width: 767px ),
@@ -205,7 +205,7 @@ screen and (max-height: 479px) and (orientation: landscape){
         border-radius: 50px 50px 0 0;
         width: 100%;
         height: 150px;
-        background-image:url('../img/쌓인눈_경계.png');
+        background-image:url('../../index/img/쌓인눈_경계.png');
         background-repeat: repeat-x;
     }
     main{
