@@ -173,6 +173,13 @@
     /* 서브 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
+    .mini_dumi{
+        position: relative;
+        left: 155px;
+        top: -70px;
+        width: 90px;
+        height: 50px;
+    }
     #start_main_wrap{
         height: 150vh;
         background: rgb(178,222,232);
@@ -328,12 +335,12 @@
         color: whitesmoke;
     }
 
-    form img{
+    .dialog_bg{
         position: relative;
-        left: 100px;
         top: 430px;
-        width: 200px;
-        z-index: -50;
+        left: 60px;
+        width: 300px;
+        z-index: -1;
     }
 
 

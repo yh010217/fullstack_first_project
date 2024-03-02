@@ -132,6 +132,14 @@ screen and (max-height: 479px) and (orientation: landscape){
     /* 모바일 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
+    .mini_dumi{
+        position: relative;
+        left: 110px;
+        top: -60px;
+        width: 80px;
+        height: 45px;
+    }
+
     #start_main_wrap{
         height: 120vh;
         background: rgb(178,222,232);
@@ -147,14 +155,14 @@ screen and (max-height: 479px) and (orientation: landscape){
     }
 
     #start_main h2{
-        top: -270px;
+        top: -290px;
         left: -95px;
         font-size: 20px;
         color: rgba(255, 255, 255, 0.6);
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
     #start_main h1{
-        top: -235px;
+        top: -255px;
         left: -140px;
         font-size: 27px;
         color: whitesmoke;
@@ -196,7 +204,7 @@ screen and (max-height: 479px) and (orientation: landscape){
     #start_main form ul li{
         display: flex;
         flex-direction: row;
-        width: 330px;
+        width: 300px;
         padding-bottom: 10px;
     }
 

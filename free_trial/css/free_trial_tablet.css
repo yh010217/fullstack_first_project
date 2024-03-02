@@ -172,6 +172,14 @@ and (orientation: landscape){
     /* 서브 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
+    .mini_dumi{
+        position: relative;
+        left: 155px;
+        top: -70px;
+        width: 90px;
+        height: 50px;
+    }
+
     #start_main_wrap{
         height: 130vh;
         background: rgb(178,222,232);
@@ -187,14 +195,14 @@ and (orientation: landscape){
     }
 
     #start_main h2{
-        top: -320px;
+        top: -340px;
         left: -110px;
         font-size: 30px;
         color: rgba(255, 255, 255, 0.6);
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
     #start_main h1{
-        top: -270px;
+        top: -300px;
         left: -180px;
         font-size: 40px;
         color: whitesmoke;
