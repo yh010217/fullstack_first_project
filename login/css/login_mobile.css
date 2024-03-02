@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'cookie-run-black';
+    src: url("../../index/font/CookieRunBlack.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-bold';
+    src: url("../../index/font/CookieRunBold.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-regular';
+    src: url("../../index/font/CookieRunRegular.ttf");
+}
+
+@font-face {
+    font-family: 'omyu-pretty';
+    src: url("../../index/font/omyuPretty.ttf");
+}
+
+@media screen  and (max-width: 767px ),
+screen and (max-height: 479px) and (orientation: landscape){
+    /* 헤더 부분 CSS 시작 */
+    header, .main_menu ul, #logo a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo{
+        margin: 10px;
+    }
+    #logo img{
+        width: 80px;
+        height: 25px;
+    }
+    #logo a{
+        position: relative;
+        top: 5px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+    }
+    #logo p{
+        padding: 4px 0 0 5px;
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: omyu-pretty, cookie-run-bold, malgun_gothic, serif;
+        color: rgb(1,140,209);
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        padding-bottom: 10px;
+        background: white;
+        box-shadow: 0 -10px 20px 10px lightgray;
+        z-index: 100;
+    }
+    .main_menu{
+        display: none;
+    }
+
+    #mobile_btn{
+        position: relative;
+        top: 8px;
+        right: 8px;
+    }
+    #mobile_login_btn img{
+        width: 35px;
+        margin-right: 3px;
+    }
+    #mobile_menu_btn{
+        width: 35px;
+    }
+
+    /* 헤더 부분 CSS 끝 */
+
+    /* 모바일 메뉴 CSS 시작 */
+    .sub_menu{
+        display: none;
+    }
+
+    #mobile_menu{
+        display: none;
+        position: fixed;
+        right: 5px;
+        top: 60px;
+        background: whitesmoke;
+        border-radius: 10px;
+        width: 140px;
+        z-index: 80;
+        box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
+    }
+    #mobile_menu ul li{
+        list-style: none;
+        text-align: left;
+    }
+    #mobile_menu ul li a{
+        display: inline-block;
+        width: 130px;
+        text-decoration: none;
+        padding: 7px 0 7px 10px;
+        color: rgb(6,18,66);
+        font-family: cookie-run-regular, omyu-pretty, malgun_gothic, serif;
+        font-size: 18px;
+    }
+    #mobile_menu ul li a:active{
+        color: rgb(1,140,209);
+        border-radius: 10px;
+    }
+    #mobile_btn{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    #mobile_login_btn img{
+        width: 25px;
+        margin-right: 3px;
+    }
+    #mobile_menu_btn{
+        width: 25px;
+    }
+
+    /* 모바일 메뉴 CSS 끝 */
+
+    /* 메인 페이지 CSS 시작 */
+
+    #start_main_wrap{
+        height: 100vh;
+        background: rgb(6,18,66);
+    }
+
+    .snow{
+        position: absolute;
+    }
+
+    #start_main{
+        position: absolute;
+        /*top:410px;*/
+        top: 55vh;
+        left: 45vw;
+        z-index: 2;
+    }
+
+    .board{
+        background-color: whitesmoke;
+        opacity: 0.9;
+        width: 330px;
+        height: 280px;
+        position: absolute;
+        top: -200px;
+        left: -147px;
+        border-radius: 25px;
+    }
+
+    #start_main h2, #start_main h1, #start_main a, #start_main img{
+        position: absolute;
+        white-space: nowrap;
+    }
+    #start_main form{
+        position: absolute;
+        top:-180px;
+        left: -92px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        color: rgb(6,18,66);
+    }
+    #start_main form ul{
+        list-style: none;
+    }
+    #start_main form ul li{
+        padding: 0 0 10px 0;
+    }
+    #start_main h2{
+        top: -300px;
+        left: -10px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: cookie-run-bold, malgun_gothic, serif;
+    }
+    #start_main h1{
+        top: -260px;
+        left: -138px;
+        font-size: 25px;
+        color: whitesmoke;
+        font-family: cookie-run-regular, malgun_gothic, serif;
+    }
+
+    input{
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        padding: 10px;
+        width: 200px;
+        margin-top: 5px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #login_btn{
+        color: white;
+        background: rgb(30,67,216);
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        width: 100px;
+        border-radius: 15px;
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    #login_btn:hover{
+        background-color: rgb(50,87,236);
+    }
+    #register_btn{
+        position: relative;
+        left: 86px;
+        font-size: 18px;
+    }
+    #register_btn:hover{
+        color: rgb(50,87,236);
+    }
+
+    form img{
+        position: relative;
+        left: -70px;
+        top: 180px;
+        width: 360px;
+        z-index: -1;
+    }
+    /* 메인 페이지 CSS 끝 */
+
+
+
+    /* 푸터 영역 시작 */
+    footer{
+        padding: 30px 0 30px 10px;
+        background: rgb(6,18,66);
+        position: relative;
+        top: 10px;
+        z-index: 20;
+        color: whitesmoke;
+        text-align: center;
+    }
+    footer p{
+        font-family: omyu-pretty, malgun_gothic, serif;
+        font-size: 12px;
+    }
+    /* 푸터 영역 끝 */
+
+}

@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'cookie-run-black';
+    src: url("../../index/font/CookieRunBlack.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-bold';
+    src: url("../../index/font/CookieRunBold.ttf");
+}
+
+@font-face {
+    font-family: 'cookie-run-regular';
+    src: url("../../index/font/CookieRunRegular.ttf");
+}
+
+@font-face {
+    font-family: 'omyu-pretty';
+    src: url("../../index/font/omyuPretty.ttf");
+}
+
+@media screen  and (max-width: 767px ),
+screen and (max-height: 479px) and (orientation: landscape){
+    /* 헤더 부분 CSS 시작 */
+    header, .main_menu ul, #logo a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo{
+        margin: 10px;
+    }
+    #logo img{
+        width: 80px;
+        height: 25px;
+    }
+    #logo a{
+        position: relative;
+        top: 5px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+    }
+    #logo p{
+        padding: 4px 0 0 5px;
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: omyu-pretty, cookie-run-bold, malgun_gothic, serif;
+        color: rgb(1,140,209);
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        padding-bottom: 10px;
+        background: white;
+        box-shadow: 0 -10px 20px 10px lightgray;
+        z-index: 100;
+    }
+    .main_menu{
+        display: none;
+    }
+
+    #mobile_btn{
+        position: relative;
+        top: 8px;
+        right: 8px;
+    }
+    #mobile_login_btn img{
+        width: 35px;
+        margin-right: 3px;
+    }
+    #mobile_menu_btn{
+        width: 35px;
+    }
+
+    /* 헤더 부분 CSS 끝 */
+
+    /* 모바일 메뉴 CSS 시작 */
+    .sub_menu{
+        display: none;
+    }
+
+    #mobile_menu{
+        display: none;
+        position: fixed;
+        right: 5px;
+        top: 60px;
+        background: whitesmoke;
+        border-radius: 10px;
+        width: 140px;
+        z-index: 80;
+        box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
+    }
+    #mobile_menu ul li{
+        list-style: none;
+        text-align: left;
+    }
+    #mobile_menu ul li a{
+        display: inline-block;
+        width: 130px;
+        text-decoration: none;
+        padding: 7px 0 7px 10px;
+        color: rgb(6,18,66);
+        font-family: cookie-run-regular, omyu-pretty, malgun_gothic, serif;
+        font-size: 18px;
+    }
+    #mobile_menu ul li a:active{
+        color: rgb(1,140,209);
+        border-radius: 10px;
+    }
+    #mobile_btn{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    #mobile_login_btn img{
+        width: 25px;
+        margin-right: 3px;
+    }
+    #mobile_menu_btn{
+        width: 25px;
+    }
+    #login_btn{
+        display: none;
+    }
+
+    /* 모바일 메뉴 CSS 끝 */
+
+    /* 메인 페이지 CSS 시작 */
+    #start_main_wrap{
+        height: 120vh;
+        background: rgb(178,222,232);
+    }
+
+    .snow{
+        position: absolute;
+    }
+
+    #start_main h2, #start_main h1, #start_main a, #start_main img{
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    #start_main h2{
+        top: -270px;
+        left: -95px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: cookie-run-bold, malgun_gothic, serif;
+    }
+    #start_main h1{
+        top: -235px;
+        left: -140px;
+        font-size: 27px;
+        color: whitesmoke;
+        font-family: cookie-run-regular, malgun_gothic, serif;
+    }
+
+    #start_main{
+        position: absolute;
+        top: 55vh;
+        left: 45vw;
+        z-index: 2;
+    }
+
+    .board{
+        background-color: whitesmoke;
+        opacity: 0.9;
+        width: 330px;
+        height: 400px;
+        position: absolute;
+        top: -170px;
+        left: -147px;
+        border-radius: 25px;
+    }
+
+    #start_main form{
+        position: absolute;
+        top:-150px;
+        left: -130px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: center;
+        color: rgb(141,107,162);
+    }
+    #start_main form ul{
+        list-style: none;
+    }
+
+    #start_main form ul li{
+        display: flex;
+        flex-direction: row;
+        width: 330px;
+        padding-bottom: 10px;
+    }
+
+    #start_main label{
+        display: inline-block;
+        width: 60px;
+        font-size: 16px;
+        position: relative;
+        top: 14px;
+        left: -10px;
+    }
+    #start_main span{
+        width: 100px;
+        font-size: 12px;
+        font-weight: lighter;
+        position: relative;
+        top: 6px;
+    }
+
+    #start_main input{
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        padding: 10px;
+        width: 150px;
+        margin-top: 5px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        text-align: center;
+        font-size: 12px;
+    }
+    #start_main select{
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        padding: 10px;
+        width: 70px;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #free_trial_btn{
+        color: white;
+        background: rgb(141,107,162);
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        width: 120px;
+        border-radius: 15px;
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+        font-size: 18px;
+        font-weight: lighter;
+        position: relative;
+        left: 85px;
+        top: 10px;
+    }
+    #free_trial_btn:hover{
+        background-color: rgb(170,107,162);
+    }
+
+    form a{
+        text-decoration: none;
+        color: rgb(141,107,162);
+        background-color: whitesmoke;
+        border: 2px solid rgb(141,107,162);
+        padding: 5px;
+        font-weight: lighter;
+        font-size: 15px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    #verify{
+        left: 240px;
+        top: 215px;
+        width: 40px;
+    }
+
+    #check{
+        left: 240px;
+        top: 265px;
+        width: 40px;
+    }
+
+    form a:hover{
+        background-color: rgb(141,107,162);
+        color: whitesmoke;
+    }
+
+    form img{
+        position: relative;
+        left: 70px;
+        top: 400px;
+        width: 150px;
+        z-index: -50;
+    }
+
+
+
+    /* 메인 페이지 CSS 끝 */
+
+
+
+    /* 푸터 영역 시작 */
+    footer{
+        padding: 30px 0 30px 10px;
+        background: rgb(178,222,232);
+        position: relative;
+        top: 10px;
+        z-index: 20;
+        color: whitesmoke;
+        text-align: center;
+    }
+    footer p{
+        font-size: 10px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+    }
+    /* 푸터 영역 끝 */
+}

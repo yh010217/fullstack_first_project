@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>천재교과서 밀크T초등 - 최상위권의 공식! 밀크티초등을 하면 성적이 오릅니다</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0, maximum-scale=2">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/register_tablet.css">
+    <link rel="stylesheet" href="css/register_mobile.css">
+    <script defer src="js/register.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div id="logo">
+            <a href="../index/index.html">
+                <img src="img/milkT_logo.webp" alt="밀크티 로고">
+                <p>초등</p>
+            </a>
+        </div>
+        <nav class="main_menu">
+            <ul>
+                <li>
+                    <a href="#" id="main_menu1">AiGenia</a>
+                </li>
+                <li><a href="#" id="main_menu2">학교공부</a></li>
+                <li><a href="#" id="main_menu3">수준별 국·영·수</a></li>
+                <li><a href="#" id="main_menu4">학습자료실</a></li>
+            </ul>
+        </nav>
+        <div id="hidden_login_btn"></div>
+        <div id="mobile_btn">
+            <a id="mobile_login_btn" href="#"><img src="img/account_icon.png" alt="로그인 아이콘"></a>
+            <img id="mobile_menu_btn" src="img/menu_icon.png" alt="메뉴 아이콘">
+        </div>
+
+    </header>
+    <div class="sub_menu_view">
+        <nav class="sub_menu">
+            <div id="sub_menu1">
+                <ul>
+                    <li><a href="#">기술소개</a></li>
+                    <li><a href="#">Ai Genia.</a></li>
+                </ul>
+            </div>
+
+            <div id="sub_menu2">
+                <ul>
+                    <li><a href="#">밀크T메뉴 구성</a></li>
+                    <li><a href="#">학년별 학습가이드</a></li>
+                    <li><a href="#">창의적 체험활동</a></li>
+                </ul>
+            </div>
+
+            <div id="sub_menu3">
+                <ul>
+                    <li><a href="#">수준별 국어</a></li>
+                    <li><a href="#">수준별 영어</a></li>
+                    <li><a href="#">수준별 수학</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--모바일 메뉴-->
+    <div id="mobile_menu">
+        <ul>
+            <li><a href="#">AiGenia</a></li>
+            <li><a href="#">학교공부</a></li>
+            <li><a href="#">수준별 국·영·수</a></li>
+            <li><a href="#">학습자료실</a></li>
+        </ul>
+    </div>
+
+
+    <!--눈송이를 그릴 캔버스 요소-->
+    <main id="start_main_wrap">
+        <canvas class="snow"></canvas>
+        <section id="start_main">
+            <div class="board"></div>
+            <h2>회원가입</h2>
+            <h1>개인 정보 입력</h1>
+            <form method="post" action="../index/index.html">
+                <ul>
+                    <li>
+                        <label for="name">학습생 이름</label>
+                        <input type="text" id="name" name="name" placeholder="한글만 입력가능" required>
+                    </li>
+                    <li>
+                        <label for="id">학습생 아이디</label>
+                        <input type="text" id="id" name="id" placeholder="영문 또는 영문+숫자 조합으로 6~13자리까지" required>
+                    </li>
+                    <li>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw" name="pw" placeholder="영문 숫자 특수문자 2가지 이상 10~20문자" required>
+                    </li>
+                    <li>
+                        <label for="pw_chk">비밀번호 확인</label>
+                        <input type="password" id="pw_chk" name="pw_chk" required>
+                    </li>
+                    <li>
+                        <label for="birthday">생년월일</label>
+                        <input type="date" id="birthday" max="2024-01-01" min="2000-01-01" required>
+                    </li>
+                    <li>
+                        <label for="grade">학년</label>
+                        <select id="school_grade" name="school_grade">
+                            <option value="ele">초등</option>
+                            <option value="mid">중등</option>
+                            <option value="high">고등</option>
+                        </select>
+                        <select id="grade" name="grade">
+                            <option value="init_grade">선택</option>
+                            <option value="g1">1학년</option>
+                            <option value="g2">2학년</option>
+                            <option value="g3">3학년</option>
+                            <option value="g4">4학년</option>
+                            <option value="g5">5학년</option>
+                            <option value="g6">6학년</option>
+                        </select>
+                        <span>(*24년 기준 학년)</span>
+                    </li>
+                    <li>
+                        <label for="phone_number">휴대전화번호</label>
+                        <input type="text" id="phone_number" name="phone_number" placeholder="휴대전화번호('-'없이 입력)" required>
+                        <a href="#">인증번호 받기</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <button id="complete_register_btn">회원가입 완료</button>
+                    </li>
+                </ul>
+                <img src="img/듬이와_친구들.png" alt="듬이와 친구들 이미지">
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>COPYRIGHT© 2015 CHUNJAE TEXTBOOK CORPORATION. ALL RIGHTS RESERVED</p>
+        <p>밀크T 홈페이지 리뉴얼 프로젝트 | 에듀테크 JAVA 풀스택 5기 | 1조 최용훈 김규섭 안재혁 최현훈</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
