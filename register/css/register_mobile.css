@@ -74,6 +74,9 @@ screen and (max-height: 479px) and (orientation: landscape){
         width: 35px;
         margin-right: 3px;
     }
+    #mobile_login_btn{
+        display: none;
+    }
     #mobile_menu_btn{
         width: 35px;
     }
