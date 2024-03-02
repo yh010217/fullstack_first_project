@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#wrap{
+    background: rgb(178,222,232);
+}
+
 @font-face {
     font-family: 'cookie-run-black';
     src: url("../../index/font/CookieRunBlack.ttf");
@@ -74,27 +78,27 @@
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
         white-space: nowrap;
         text-decoration: none;
-        color: black;
+        color: rgb(141,107,162);
         font-weight: bolder;
         font-size: 18px;
         padding: 10px 10px 16px 10px;
     }
     .main_menu a:hover{
-        color: rgb(30,67,216);
-        border-bottom: 4px solid rgb(30,67,216);
+        color: rgb(141,107,162);
+        border-bottom: 4px solid rgb(141,107,162);
     }
 
     #login_btn{
         white-space: nowrap;
         text-decoration: none;
-        border: 2px solid rgb(30,67,216);
+        border: 2px solid rgb(141,107,162);
         height: 25px;
         border-radius: 30px;
         padding: 5px 10px 2px 10px;
         position: relative;
         top: 10px;
         left: -10px;
-        color: rgb(30,67,216);
+        color: rgb(141,107,162);
         font-size: 16px;
         font-weight: bolder;
         font-family: omyu-pretty,cookie-run-regular, malgun_gothic, serif;
@@ -151,7 +155,7 @@
         font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
     }
     .sub_menu a:hover{
-        color: rgb(30,67,216);
+        color: rgb(141,107,162);
     }
     #sub_menu1{
         position: relative;
@@ -169,6 +173,169 @@
     /* 서브 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
+    #start_main_wrap{
+        height: 150vh;
+        background: rgb(178,222,232);
+    }
+
+    .snow{
+        position: absolute;
+    }
+
+    #start_main h2, #start_main h1, #start_main a, #start_main img{
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    #start_main h2{
+        top: -250px;
+        left: -110px;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: cookie-run-bold, malgun_gothic, serif;
+    }
+    #start_main h1{
+        top: -200px;
+        left: -180px;
+        font-size: 40px;
+        color: whitesmoke;
+        font-family: cookie-run-regular, malgun_gothic, serif;
+    }
+
+    #start_main{
+        position: absolute;
+        top: 55vh;
+        left: 45vw;
+        z-index: 2;
+    }
+
+    .board{
+        background-color: whitesmoke;
+        opacity: 0.9;
+        width: 465px;
+        height: 460px;
+        position: absolute;
+        top: -100px;
+        left: -180px;
+        border-radius: 30px;
+    }
+
+    #start_main form{
+        position: absolute;
+        top:-80px;
+        left: -150px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        font-size: 24px;
+        font-weight: bolder;
+        text-align: center;
+        color: rgb(141,107,162);
+    }
+    #start_main form ul{
+        list-style: none;
+    }
+
+    #start_main form ul li{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    #start_main label{
+        display: inline-block;
+        width: 90px;
+        font-size: 18px;
+        position: relative;
+        top: 14px;
+        left: -10px;
+    }
+    #start_main span{
+        width: 100px;
+        font-size: 14px;
+        font-weight: lighter;
+        position: relative;
+        top: 6px;
+    }
+
+    #start_main input{
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        padding: 10px;
+        width: 220px;
+        margin-top: 5px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        text-align: center;
+        font-size: 14px;
+    }
+    #start_main select{
+        border: 1px solid #ced4da;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100px;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-family: omyu-pretty, malgun_gothic, serif;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #free_trial_btn{
+        color: white;
+        background: rgb(141,107,162);
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        width: 120px;
+        border-radius: 15px;
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+        font-size: 20px;
+        font-weight: lighter;
+        position: relative;
+        left: 140px;
+        top: 10px;
+    }
+    #free_trial_btn:hover{
+        background-color: rgb(170,107,162);
+    }
+
+    form a{
+        text-decoration: none;
+        color: rgb(141,107,162);
+        background-color: whitesmoke;
+        border: 2px solid rgb(141,107,162);
+        padding: 5px;
+        font-weight: lighter;
+        font-size: 15px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    #verify{
+        left: 336px;
+        top: 236px;
+        width: 50px;
+    }
+
+    #check{
+        left: 336px;
+        top: 286px;
+        width: 50px;
+    }
+
+    form a:hover{
+        background-color: rgb(141,107,162);
+        color: whitesmoke;
+    }
+
+    form img{
+        position: relative;
+        left: 100px;
+        top: 430px;
+        width: 200px;
+        z-index: -50;
+    }
+
 
 
     /* 메인 페이지 CSS 끝 */
@@ -178,12 +345,15 @@
     /* 푸터 영역 시작 */
     footer{
         padding: 30px 0 30px 10px;
-        background: rgb(6,18,66);
+        background: rgb(178,222,232);
         position: relative;
+        top: 10px;
         z-index: 20;
         color: whitesmoke;
+        text-align: center;
     }
     footer p{
+        font-size: 15px;
         font-family: omyu-pretty, malgun_gothic, serif;
     }
     /* 푸터 영역 끝 */

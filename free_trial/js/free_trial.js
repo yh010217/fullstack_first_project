@@ -1,3 +1,83 @@
+/* 눈송이 애니메이션 효과 시작 */
+document.addEventListener('DOMContentLoaded', function() {
+    const canvas = document.createElement('canvas');
+    canvas.className = 'snow';
+    document.getElementById('start_main_wrap').appendChild(canvas);
+
+    const context = canvas.getContext('2d');
+
+    let canvasWidth = document.querySelector('#start_main_wrap').clientWidth;
+    let canvasHeight = document.querySelector('#start_main_wrap').clientHeight;
+    let lastDeviceType = window.innerWidth < 768 ? 'mobile' : 'desktop';
+
+    let snowParticles = [];
+
+    function createParticle() {
+        this.x = Math.random() * canvasWidth;
+        this.y = Math.random() * canvasHeight;
+        this.vx = Math.random() * 4 - 1;
+        this.vy = Math.random() * 4 + 1;
+        this.color = 'rgba(255, 255, 255, ' + Math.random() + ')';
+        this.radius = Math.random() * 5 + 2;
+    }
+
+    function createParticles() {
+        snowParticles = [];
+        const particleCount = lastDeviceType === 'mobile' ? 40 : 100;
+        for (let i = 0; i < particleCount; i++) {
+            snowParticles.push(new createParticle());
+        }
+    }
+
+    function setCanvasSize() {
+        const currentDeviceType = window.innerWidth < 768 ? 'mobile' : 'desktop';
+        if (currentDeviceType !== lastDeviceType) {
+            lastDeviceType = currentDeviceType;
+            createParticles();
+        }
+
+        const tempCanvas = document.createElement('canvas');
+        const tempCtx = tempCanvas.getContext('2d');
+        tempCanvas.width = canvasWidth;
+        tempCanvas.height = canvasHeight;
+        tempCtx.drawImage(canvas, 0, 0);
+
+        canvasWidth = document.querySelector('#start_main_wrap').clientWidth;
+        canvasHeight = document.querySelector('#start_main_wrap').clientHeight;
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+
+        context.drawImage(tempCanvas, 0, 0);
+    }
+
+    function draw() {
+        context.clearRect(0, 0, canvasWidth, canvasHeight);
+        snowParticles.forEach(function(particle) {
+            context.beginPath();
+            let gradient = context.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, particle.radius);
+            gradient.addColorStop(1, particle.color);
+            gradient.addColorStop(1, 'rgb(66, 66, 66)');
+            context.fillStyle = gradient;
+            context.arc(particle.x, particle.y, particle.radius, Math.PI * 2, 0);
+            context.fill();
+
+            particle.x += particle.vx;
+            particle.y += particle.vy;
+
+            if (particle.x < -50) particle.x = canvasWidth + 50;
+            if (particle.y < -50) particle.y = canvasHeight + 50;
+            if (particle.x > canvasWidth + 50) particle.x = -50;
+            if (particle.y > canvasHeight + 50) particle.y = -50;
+        });
+    }
+
+    window.addEventListener('resize', setCanvasSize);
+    setCanvasSize();
+    createParticles();
+    setInterval(draw, 33);
+});
+/* 눈송이 애니메이션 효과 끝 */
+
 /* 메뉴 보여주는 코드 시작 */
 document.addEventListener("DOMContentLoaded", function() {
     // 메인 메뉴 영역, 서브 메뉴 영역
@@ -16,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //첫번째 서브메뉴 탭에서 마우스가 올라가면 첫번째 메인메뉴 속성 지정
     subMenu1.addEventListener('mouseover', function () {
-        mainMenu1.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216)');
+        mainMenu1.setAttribute('style', 'color:rgb(141,107,162); border-bottom: 4px solid rgb(141,107,162);');
     }, false);
     //첫번째 서브메뉴 탭에서 마우스가 떠나면 첫번째 메인메뉴 속성 제거
     subMenu1.addEventListener('mouseleave', function () {
@@ -25,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //두번째 서브메뉴 탭에서 마우스가 올라가면 두번째 메인메뉴 속성 지정
     subMenu2.addEventListener('mouseover', function () {
-        mainMenu2.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216);');
+        mainMenu2.setAttribute('style', 'color:rgb(141,107,162); border-bottom: 4px solid rgb(141,107,162);');
     }, false);
     //두번째 서브메뉴 탭에서 마우스가 떠나면 두번째 메인메뉴 속성 제거
     subMenu2.addEventListener('mouseleave', function () {
@@ -34,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //세번째 서브메뉴 탭에서 마우스가 떠나면 세번째 메인메뉴 속성 제거
     subMenu3.addEventListener('mouseover', function () {
-        mainMenu3.setAttribute('style', 'color:rgb(30,67,216); border-bottom: 4px solid rgb(30,67,216);');
+        mainMenu3.setAttribute('style', 'color:rgb(141,107,162); border-bottom: 4px solid rgb(141,107,162);');
     }, false);
     //세번째 서브메뉴 탭에서 마우스가 떠나면 세번째 메인메뉴 속성 제거
     subMenu3.addEventListener('mouseleave', function () {
