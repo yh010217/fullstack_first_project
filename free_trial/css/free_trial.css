@@ -173,13 +173,6 @@
     /* 서브 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
-    .mini_dumi{
-        position: relative;
-        left: 155px;
-        top: -70px;
-        width: 90px;
-        height: 50px;
-    }
     #start_main_wrap{
         height: 150vh;
         background: rgb(178,222,232);
@@ -334,18 +327,26 @@
         color: whitesmoke;
     }
 
+    .mini_dumi{
+        position: relative;
+        left: 190px;
+        top: -50px;
+        width: 90px;
+        height: 50px;
+    }
+
     .character_left{
         position: relative;
-        top: 170px;
-        left: -140px;
+        top: 190px;
+        left: -120px;
         width: 150px;
         z-index: -1;
     }
 
     .character_right{
         position: relative;
-        top: 80px;
-        left: 400px;
+        top: 100px;
+        left: 440px;
         width: 130px;
         z-index: -1;
     }
@@ -357,6 +358,22 @@
         left: 60px;
         width: 300px;
         z-index: -1;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+
+    .content {
+        position: absolute;
+        animation: fadeInUp 1s;
     }
 
 

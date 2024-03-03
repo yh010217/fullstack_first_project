@@ -132,13 +132,6 @@ screen and (max-height: 479px) and (orientation: landscape){
     /* 모바일 메뉴 CSS 끝 */
 
     /* 메인 페이지 CSS 시작 */
-    .mini_dumi{
-        position: relative;
-        left: 110px;
-        top: -60px;
-        width: 80px;
-        height: 45px;
-    }
 
     #start_main_wrap{
         height: 120vh;
@@ -299,12 +292,36 @@ screen and (max-height: 479px) and (orientation: landscape){
         display: none;
     }
 
+    .mini_dumi{
+        position: relative;
+        left: 130px;
+        top: -40px;
+        width: 70px;
+        height: 40px;
+    }
+
     .dialog_bg{
         position: relative;
-        left: 70px;
+        left: 75px;
         top: 400px;
-        width: 150px;
+        width: 200px;
         z-index: -50;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 0.9;
+            transform: translateZ(0);
+        }
+    }
+
+    .content {
+        position: absolute;
+        animation: fadeInUp 1s;
     }
 
 
