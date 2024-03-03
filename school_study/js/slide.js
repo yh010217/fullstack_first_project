@@ -55,15 +55,15 @@ let buttonArr = document.querySelectorAll('.slide_button>.button');
 
 let now_page = [0,3,6];
 
-buttonArr[now_page[0]].style.backgroundColor="blue";
-buttonArr[now_page[1]].style.backgroundColor="blue";
-buttonArr[now_page[2]].style.backgroundColor="blue";
+buttonArr[now_page[0]].style.backgroundColor="lightskyblue";
+buttonArr[now_page[1]].style.backgroundColor="lightskyblue";
+buttonArr[now_page[2]].style.backgroundColor="lightskyblue";
 
 for(let i = 0 ; i < buttonArr.length ; i++){
     buttonArr[i].addEventListener('click',function(){
         if(i<3){
             buttonArr[now_page[0]].style.backgroundColor="silver";
-            buttonArr[i].style.backgroundColor="blue";
+            buttonArr[i].style.backgroundColor="lightskyblue";
 
             let move_num = i - now_page[0];
             if(move_num>0){
@@ -80,7 +80,7 @@ for(let i = 0 ; i < buttonArr.length ; i++){
         }else if(i>=3 && i<6){
 
             buttonArr[now_page[1]].style.backgroundColor="silver";
-            buttonArr[i].style.backgroundColor="blue";
+            buttonArr[i].style.backgroundColor="lightskyblue";
 
             let move_num = i - now_page[1];
             if(move_num>0){
@@ -97,7 +97,7 @@ for(let i = 0 ; i < buttonArr.length ; i++){
         }else{
 
             buttonArr[now_page[2]].style.backgroundColor="silver";
-            buttonArr[i].style.backgroundColor="blue";
+            buttonArr[i].style.backgroundColor="lightskyblue";
 
             let move_num = i - now_page[2];
             if(move_num>0){

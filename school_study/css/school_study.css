@@ -196,6 +196,8 @@
     }
 
     .container > .inner_tab_wrap > .inner_tab > nav > ul > li > img {
+        box-sizing: border-box;
+        padding:15px;
         height: 70px;
         width: 70px;
         display: inline-block;

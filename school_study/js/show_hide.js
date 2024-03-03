@@ -11,6 +11,7 @@ document.querySelector('#advertise_right_button').onclick=function(){
     }
     document.querySelector('.advertise_right').classList.
     toggle("showAd");
+    console.log("right_button_click");
 
 };
 
