@@ -1,0 +1,306 @@
+@media screen and (min-width: 768px) and (max-width:1023px),
+screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape)
+{
+    body {
+        margin: 0;
+    }
+
+    #head_cont_wrap {
+        width: 100%;
+        height: 140vh;
+    }
+
+    #head_cont {
+        position: fixed;
+        z-index: 1;
+
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    header {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid silver;
+        padding: 2vh 0;
+        display: flex;
+        justify-content: space-between;
+
+        flex-grow: 0; /*head_cont 에 대한 flex-grow*/
+    }
+
+    #title {
+        height: 100%;
+        width: 155px;
+        padding-left: 15px;
+        display: inline-block;
+    }
+
+    #title > img[src$="milkT.jpg"] {
+        display: inline-block;
+        width: auto;
+        height: 100%;
+    }
+
+    #title > p {
+        display: inline-block;
+        color: #434343;
+        margin: 0;
+        font-size: 1.3rem;
+        position: relative;
+        top: -8px;
+        font-weight: 900;
+    }
+
+    header > nav {
+        display: inline-block;
+
+        width: 70%;
+    }
+
+    header > nav > ul {
+        list-style: none;
+        padding-left: 0;
+        position: relative;
+        top: -8px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+        font-weight: 700;
+        color: #393939;
+    }
+
+    header > #login_page > p {
+        width: 120px;
+        border: 2px solid blue;
+        color: blue;
+        margin-right: 15px;
+        padding: 5px 0;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        top: -15px;
+    }
+
+
+    /*위에까지가 헤더*/
+    .container {
+        flex-grow: 1; /*head_cont 에 대한 flex-grow*/
+        border: 2px solid silver;
+        /*height: 85vh;*/
+        width: 100vw;
+        overflow: scroll;
+        /*display: flex;
+        flex-direction: column;*/
+    }
+
+
+    /*left advertise 시작*/
+    #advertise_left_button {
+        display: none;
+    }
+
+
+    .container > .advertise_left {
+        display: none;
+    }
+
+
+    /*left advertise 끝*/
+    /*inner tab 시작*/
+    .container > .inner_tab_wrap {
+        width: 0;
+        position: absolute;
+    }
+
+    .inner_tab_wrap_open {
+        min-width: 180px;
+    }
+
+    .inner_tab_open {
+        transform: translateY(360px);
+        transition-duration: 1s;
+    }
+
+    .inner_tab_close {
+        transform: translateY(-360px);
+        transition-duration: 1s;
+    }
+
+
+    .container > .inner_tab_wrap > .inner_tab {
+        min-height: 580px;
+        width: 170px;
+        position: relative;
+        top: -290px;
+
+        flex-grow: 0;
+
+
+        flex-basis: 170px;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > h5 {
+        margin: 0;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul {
+        /*display: inline-block;*/
+        width: 170px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-bottom: 60px;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul > li {
+        height: 70px;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul > li > a {
+        color: black;
+        font-weight: 900;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul > li:hover {
+        background-color: cornflowerblue;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul > li > img {
+        box-sizing: border-box;
+        padding: 15px;
+        height: 70px;
+        width: 70px;
+        display: inline-block;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > nav > ul > li > a > p {
+        width: 100px;
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .container > .inner_tab_wrap > .inner_tab > #inner_tab_button, #inner_tab_button2{
+        width: 100%;
+        height: 10px;
+        background-color: lightgrey;
+    }
+
+
+    #nyangi > img {
+        width: 93px;
+    }
+
+    /*여기까지가 inner tab*/
+
+    /*여기서부터 main_section*/
+    .container > #main_section {
+        background-color: antiquewhite;
+        flex-grow: 1;
+        text-align: center;
+        overflow-y: scroll;
+
+
+        padding-left: 8px;
+
+    }
+
+    .container > #main_section::-webkit-scrollbar {
+        width: 8px;
+        background-color: antiquewhite;
+        border-radius: 5px;
+    }
+
+
+    .container > #main_section::-webkit-scrollbar-thumb {
+        width: 7px;
+        background-color: lightskyblue;
+        border-radius: 5px;
+    }
+
+
+
+    .container > #main_section > .main_section_img_wrap {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .container > #main_section > .main_section_img_wrap > img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .img_height100 {
+        height: 100%;
+        width: auto;
+    }
+
+    .img_width100 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*여기까지 main_section*/
+    #advertise_right_button {
+        display:none;
+    }
+
+    .container > .advertise_right {
+        display: none;
+    }
+    #main_section .advertise_bottom{
+        width:100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        gap:2vw;
+    }
+    #main_section .advertise_bottom .bottom_ad{
+        width:300px;
+        height: 100px;
+        border:1px solid silver;
+        border-radius: 15px;
+        background-color: lightskyblue;
+    }
+
+
+    /*-------------여기까지 container 끝---------------------*/
+    /*footer 시작*/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-top: 5vh;
+
+
+        background-color: lightgrey;
+        position: relative;
+        z-index: 2;
+    }
+
+    footer > img {
+        height: 30px;
+    }
+
+    footer > p {
+        margin: 0 2vw 3vh;
+        color: #6a6a6a;
+        font-size: 0.8rem;
+    }
+}
