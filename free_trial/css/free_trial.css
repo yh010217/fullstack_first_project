@@ -218,7 +218,6 @@
 
     .board{
         background-color: whitesmoke;
-        opacity: 0.9;
         width: 465px;
         height: 460px;
         position: absolute;
@@ -335,7 +334,24 @@
         color: whitesmoke;
     }
 
+    .character_left{
+        position: relative;
+        top: 170px;
+        left: -140px;
+        width: 150px;
+        z-index: -1;
+    }
+
+    .character_right{
+        position: relative;
+        top: 80px;
+        left: 400px;
+        width: 130px;
+        z-index: -1;
+    }
+
     .dialog_bg{
+        display: none;
         position: relative;
         top: 430px;
         left: 60px;

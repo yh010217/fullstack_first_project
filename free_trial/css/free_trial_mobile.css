@@ -295,14 +295,17 @@ screen and (max-height: 479px) and (orientation: landscape){
         color: whitesmoke;
     }
 
-    form img{
+    .character_left, .character_right{
+        display: none;
+    }
+
+    .dialog_bg{
         position: relative;
         left: 70px;
         top: 400px;
         width: 150px;
         z-index: -50;
     }
-
 
 
     /* 메인 페이지 CSS 끝 */

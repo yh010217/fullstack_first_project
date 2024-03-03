@@ -195,14 +195,14 @@ and (orientation: landscape){
     }
 
     #start_main h2{
-        top: -340px;
+        top: -290px;
         left: -110px;
         font-size: 30px;
         color: rgba(255, 255, 255, 0.6);
         font-family: cookie-run-bold, malgun_gothic, serif;
     }
     #start_main h1{
-        top: -300px;
+        top: -250px;
         left: -180px;
         font-size: 40px;
         color: whitesmoke;
@@ -218,18 +218,17 @@ and (orientation: landscape){
 
     .board{
         background-color: whitesmoke;
-        opacity: 0.9;
         width: 465px;
         height: 440px;
         position: absolute;
-        top: -180px;
+        top: -140px;
         left: -180px;
         border-radius: 30px;
     }
 
     #start_main form{
         position: absolute;
-        top:-150px;
+        top:-120px;
         left: -150px;
         font-family: omyu-pretty, malgun_gothic, serif;
         font-size: 24px;
@@ -335,7 +334,24 @@ and (orientation: landscape){
         color: whitesmoke;
     }
 
-    form img{
+    .character_left{
+        position: relative;
+        top: 165px;
+        left: -140px;
+        width: 150px;
+        z-index: -1;
+    }
+
+    .character_right{
+        position: relative;
+        top: 70px;
+        left: 400px;
+        width: 130px;
+        z-index: -1;
+    }
+
+    .dialog_bg{
+        display: none;
         position: relative;
         left: 100px;
         top: 430px;
