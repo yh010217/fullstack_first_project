@@ -80,7 +80,6 @@ a {
 }
 .subList_ul{
     background-color: #F0F8FF;
-    border-radius: 30px;
 }
 #container .subList:hover .subList_ul {
     display: block;
