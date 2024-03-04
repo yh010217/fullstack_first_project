@@ -10,6 +10,7 @@
     <script defer src="js/show_hide.js"></script>
     <script defer src="js/main_img_sizing.js"></script>
     <script defer src="js/inner_inner_tab.js"></script>
+    <script defer src="js/menu_bar.js"></script>
 </head>
 <body>
 
@@ -21,23 +22,60 @@
                     <img src="img/milkT.jpg" alt="밀크티 로고">
                     <p>초등</p>
                 </div>
-                <nav>
+                <nav class="main_menu">
                     <ul>
-                        <li>AiGenia</li>
-                        <li>학교공부</li>
-                        <li>수준별 국·영·수</li>
-                        <li>학습자료실</li>
+                        <li><a href="#" id="main_menu1">AiGenia</a></li>
+                        <li><a href="#" id="main_menu2">학교공부</a></li>
+                        <li><a href="#" id="main_menu3">수준별 국영수</a></li>
+                        <li><a href="#" id="main_menu4">학습자료실</a></li>
                     </ul>
                 </nav>
                 <div id="login_page">
                     <p>가입·로그인</p>
                 </div>
-                
+
                 <div id="mobile_btn">
                     <a id="mobile_login_btn" href="#"><img src="img/account_icon.png" alt="로그인 아이콘"></a>
                     <img id="mobile_menu_btn" src="img/menu_icon.png" alt="메뉴 아이콘">
                 </div>
             </header>
+
+            <div class="sub_menu_view">
+                <nav class="sub_menu">
+                    <div id="sub_menu1">
+                        <ul>
+                            <li><a href="#">기술소개</a></li>
+                            <li><a href="#">Ai Genia.</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="sub_menu2">
+                        <ul>
+                            <li><a href="#">밀크T메뉴 구성</a></li>
+                            <li><a href="#">학년별 학습가이드</a></li>
+                            <li><a href="#">창의적 체험활동</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="sub_menu3">
+                        <ul>
+                            <li><a href="#">수준별 국어</a></li>
+                            <li><a href="#">수준별 영어</a></li>
+                            <li><a href="#">수준별 수학</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div id="mobile_menu">
+                <ul>
+                    <li><a href="#">AiGenia</a></li>
+                    <li><a href="#">학교공부</a></li>
+                    <li><a href="#">수준별 국·영·수</a></li>
+                    <li><a href="#">학습자료실</a></li>
+                </ul>
+            </div>
             <div class="container">
 
                 <div id="advertise_left_button">
@@ -58,7 +96,7 @@
 
                 </aside>
 
-                
+
                 <div class="inner_tab_wrap inner_tab_wrap_open">
                     <section class="inner_tab inner_tab_open">
                         <h5></h5>
@@ -116,8 +154,6 @@
                 </div>
                 <section id="main_section">
                     <!--페이지들 보면서-->
-
-
 
 
                     <div class="main_section_img_wrap inner_inner_2">

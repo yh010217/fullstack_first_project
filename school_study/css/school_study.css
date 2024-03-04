@@ -18,16 +18,37 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    @font-face {
+        font-family: 'cookie-run-black';
+        src: url("../font/CookieRunBlack.ttf");
+    }
+
+    @font-face {
+        font-family: 'cookie-run-bold';
+        src: url("../font/CookieRunBold.ttf");
+    }
+
+    @font-face {
+        font-family: 'cookie-run-regular';
+        src: url("../font/CookieRunRegular.ttf");
+    }
+
+    @font-face {
+        font-family: 'omyuPretty';
+        src: url("../font/omyuPretty.ttf");
+    }
 
     header {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid silver;
-        padding: 2vh 0;
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
 
+        font-family: omyuPretty;
         flex-grow: 0; /*head_cont 에 대한 flex-grow*/
+
     }
 
     #title {
@@ -51,6 +72,7 @@
         position: relative;
         top: -8px;
         font-weight: 900;
+        color: rgb(1,140,209);
     }
 
     header > nav {
@@ -59,37 +81,124 @@
         width: 70%;
     }
 
+    header >nav a{
+        text-decoration: none;
+        color: black;
+        padding:10px;
+    }
+    header>nav a:hover{
+        color: rgb(30,67,216);
+        border-bottom: 4px solid rgb(30,67,216);
+    }
+
     header > nav > ul {
         list-style: none;
         padding-left: 0;
         position: relative;
         top: -8px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     header > nav > ul > li {
         display: inline-block;
         font-weight: 700;
         color: #393939;
+        font-size:1.2rem;
+        padding-left:30px;
     }
 
     header > #login_page > p {
-        width: 120px;
-        border: 2px solid blue;
+        width: 100px;
+        border: 2px solid rgb(30,67,216);
         color: blue;
         margin-right: 15px;
         padding: 5px 0;
         text-align: center;
         border-radius: 20px;
         position: relative;
-        top: -15px;
+        top: -20px;
+
+        font-weight: 900;
+        font-size: 1.2rem;
     }
 
     header #mobile_btn{
         display:none;
     }
 
+
+
+    /* 서브 메뉴 CSS 시작 */
+    .sub_menu_view {
+        position: fixed;
+        display: none;
+        top: -220px;
+        left: 0;
+        width: 100%;
+        z-index: 90;
+    }
+    .sub_menu_view.slideDown {
+        animation: slideDownAnimation 0.5s ease forwards;
+    }
+    @keyframes slideDownAnimation {
+        from {
+            top: -170px; /* 시작 위치: 위쪽에서 아래로 */
+        }
+        to {
+            top: 55px; /* 종료 위치: 아래쪽으로 내려가기 */
+        }
+    }
+
+    .sub_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+        left:15%;
+        position: absolute;
+        z-index: 90;
+        background-color: rgba(255,255,255,0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        padding: 0 0 20px 0;
+        text-align: center;
+
+    }
+    .sub_menu ul{
+        list-style: none;
+    }
+    .sub_menu li{
+        margin-bottom: 10px;
+    }
+    .sub_menu a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 0.9rem;
+        font-weight: bold;
+        font-family: omyu-pretty, cookie-run-regular, malgun_gothic, serif;
+    }
+    .sub_menu a:hover{
+        color: rgb(30,67,216);
+    }
+    #sub_menu1{
+        position: relative;
+        left: -45px;
+    }
+
+    #sub_menu2{
+        position: relative;
+        left: -45px;
+    }
+    #sub_menu3{
+        position: relative;
+        left: -45px;
+    }
+
+    #mobile_menu{
+        display: none;
+    }
+    /* 서브 메뉴 CSS 끝 */
 
     /*위에까지가 헤더*/
     .container {
@@ -134,7 +243,9 @@
     /*inner tab 시작*/
     .container > .inner_tab_wrap {
         width: 0;
-        background-color: antiquewhite;
+        /*background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
+        */
+        background-color: #f0fcff;
     }
 
     .inner_tab_wrap_open {
@@ -195,7 +306,7 @@
     }
 
     .container > .inner_tab_wrap > .inner_tab > nav > ul > li:hover {
-        background-color: cornflowerblue;
+        background: linear-gradient(to right bottom,#bee6ff 75%,#cbdfff);
     }
 
     .container > .inner_tab_wrap > .inner_tab > nav > ul > li > img {
@@ -225,10 +336,13 @@
 
     /*여기까지가 inner tab*/
     .container > #main_section {
-        background-color: antiquewhite;
         flex-grow: 1;
         text-align: center;
         overflow-y: scroll;
+
+
+        background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
+
 
 
         padding-left: 8px;
@@ -237,7 +351,7 @@
 
     .container > #main_section::-webkit-scrollbar {
         width: 8px;
-        background-color: antiquewhite;
+        background-color: #f0fcff;
         border-radius: 5px;
     }
 
@@ -298,7 +412,7 @@
 
     .showAd {
         height: 100%;
-        background-color: antiquewhite;
+        background-color: #f0fcff;
         min-width: 80px;
         max-width: 80px;
 

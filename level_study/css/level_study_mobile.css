@@ -1,4 +1,24 @@
 @media screen and (max-width:767px){
+    @font-face {
+        font-family: 'cookie-run-black';
+        src: url("../font/CookieRunBlack.ttf");
+    }
+
+    @font-face {
+        font-family: 'cookie-run-bold';
+        src: url("../font/CookieRunBold.ttf");
+    }
+
+    @font-face {
+        font-family: 'cookie-run-regular';
+        src: url("../font/CookieRunRegular.ttf");
+    }
+
+    @font-face {
+        font-family: 'omyuPretty';
+        src: url("../font/omyuPretty.ttf");
+    }
+
     body {
         margin: 0;
     }
@@ -27,6 +47,9 @@
         display: flex;
         justify-content: space-between;
 
+
+
+
         flex-grow: 0; /*head_cont 에 대한 flex-grow*/
     }
 
@@ -51,11 +74,12 @@
         position: relative;
         top: -8px;
         font-weight: 900;
+        font-family: omyuPretty;
+        color: rgb(1,140,209);
     }
 
     header > nav {
         display: none;
-        
     }
 
     header > nav > ul {
@@ -96,11 +120,47 @@
         left:-8px;
     }
 
+    .sub_menu{
+        display: none;
+    }
+    #mobile_menu{
+        display: none;
+        position: fixed;
+        right: 5px;
+        top: 60px;
+        background: white;
+        border-radius: 10px;
+        width: 120px;
+        z-index: 80;
+        box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.3);
+    }
+    #mobile_menu ul{
+        padding-left: 5px;
+    }
+    #mobile_menu ul li{
+        list-style: none;
+        text-align: left;
+    }
+    #mobile_menu ul li a{
+        display: inline-block;
+        width: 110px;
+        text-decoration: none;
+        padding: 7px 0 7px 10px;
+        color: rgb(6,18,66);
+        font-family: omyuPretty, malgun_gothic, serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #mobile_menu ul li a:active{
+        color: rgb(1,140,209);
+        border-radius: 10px;
+    }
+
 
     /*위에까지가 헤더*/
     .container {
         flex-grow: 1; /*head_cont 에 대한 flex-grow*/
-        border: 2px solid silver;
+        /*border: 2px solid silver;*/
         /*height: 85vh;*/
         width: 100vw;
         overflow: scroll;
