@@ -1,5 +1,4 @@
-@media screen and (min-width: 1024px),screen and (min-height: 1024px) and (orientation: landscape) {
-
+@media screen and (min-width: 1024px){
     body {
         margin: 0;
     }
@@ -27,6 +26,7 @@
         padding: 2vh 0;
         display: flex;
         justify-content: space-between;
+
 
         flex-grow: 0; /*head_cont 에 대한 flex-grow*/
     }
@@ -87,6 +87,10 @@
         top: -15px;
     }
 
+    #mobile_btn{
+        display: none;
+    }
+
 
     /*위에까지가 헤더*/
     .container {
@@ -106,6 +110,7 @@
         position: fixed;
         left: 0;
         bottom: 0;
+        z-index: 10;
     }
 
     #advertise_left_button > img {
@@ -133,6 +138,8 @@
     /*inner tab 시작*/
     .container > .inner_tab_wrap {
         width: 0;
+        
+        background-color: #f3fdff;
     }
 
     .inner_tab_wrap_open {

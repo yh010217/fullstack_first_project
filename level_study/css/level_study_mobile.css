@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (max-width:767px){
     body {
         margin: 0;
     }
@@ -54,9 +54,8 @@
     }
 
     header > nav {
-        display: inline-block;
-
-        width: 70%;
+        display: none;
+        
     }
 
     header > nav > ul {
@@ -74,6 +73,10 @@
         color: #393939;
     }
 
+    header > #login_page{
+        display:none;
+    }
+
     header > #login_page > p {
         width: 120px;
         border: 2px solid blue;
@@ -86,8 +89,11 @@
         top: -15px;
     }
 
-    header #mobile_btn{
-        display:none;
+    header > #mobile_btn img{
+        width:30px;
+        height:30px;
+        position:relative;
+        left:-8px;
     }
 
 
@@ -119,6 +125,8 @@
     .container > .inner_tab_wrap {
         width: 0;
         position: absolute;
+
+        display: none;
     }
 
     .inner_tab_wrap_open {
@@ -307,4 +315,5 @@
         color: #6a6a6a;
         font-size: 0.8rem;
     }
+
 }
