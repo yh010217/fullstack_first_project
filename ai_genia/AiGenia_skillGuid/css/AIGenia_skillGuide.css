@@ -1,0 +1,473 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    width: 100%;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: 'Pretendard-Regular';
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align:top;
+}
+
+.page {
+    margin-top: 60px;
+    width: 960px;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+.wrap{
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFF;
+}
+
+
+.flexbox{
+    display: flex;
+}
+
+
+.page-indicator {
+  width: 240px;
+  height: 400px;
+  position: sticky;
+  top: 150px;
+  margin-top: 100px;
+  margin-right: 50px;
+
+}
+
+.main_ban{
+    padding-top: 86px;
+    width: 100%;
+}
+
+.main_ban img{
+  width: 100%;
+}
+
+.page-indicator > ul{
+        display:flex;
+        flex-direction:column;
+    }
+
+.page-indicator > ul > li{
+    margin: 10px 20px;
+}
+
+.page-indicator > ul > li a{
+    color:#333;
+}
+
+.page-indicator > ul > li.active a {
+    color:#6195FF;
+}
+
+h2{
+    font-size: 42px;
+    letter-spacing: -3px;
+    font-weight:bolder;
+    color:#6195FF;
+    
+}
+
+/* page-1 밀크T Genia */
+.page-1{
+    height: 550px;
+}
+
+.page-1 h3{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.page-1 .insAfter ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.page-1 div{
+    margin: 0 10px;
+}
+
+.page-1 span{
+    font-weight: bold;
+    color:#1D67FF;
+    font-size: 20px;
+}
+.page-1 .insAfter img{
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.page-1 .insAfter p{
+    align-items: center;
+}
+.page-1 .insAfter h4, .page-1 .insAfter span{
+    font-family: 'yg-jalnan';
+}
+/* page-2 AI맞춤학습 프로세스 */
+.page-2 {
+    height:850px;
+    background-color:#e9f6ff;
+    border-radius: 20px;
+}
+.page-2 h2{
+    margin-top: 0;
+    background-color: #1b91ff;
+    padding: 20px 0;
+    color:#FFF;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+}
+.page-2 h3{
+    margin: 30px 0;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.page-2 img{
+    width: 860px;
+    border-radius: 20px;
+}
+
+/* page-3 Knowledge Tracing*/
+.page-3 {
+    height:750px;
+}
+
+.page-3 .kt_wrap{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.page-3 .kt_wrap .kt_contentbox{
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    height: 280px;
+    border-radius: 30px;
+    text-align: left;
+    background-color:#6195FF;
+    color:#FFF;
+}
+
+.page-3 .kt_imgbox img{
+   width: 150px;
+   position: absolute;
+   bottom: -80px;
+}
+.page-3 .kt_imgbox .right_char{
+    right: -20px;
+}
+.page-3 .kt_imgbox .left_char{
+    left: -20px;
+}
+
+.page-3 .kt_wrap .kt_contentbox h3{
+    
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'yg-jalnan';
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+.page-3 .kt_wrap .kt_contentbox p{
+  font-size: 18px;
+  line-height: 30px;
+}
+/* page-4 ICP기술소개*/
+.page-4 {
+    height:700px;
+}
+
+
+.page-4 h2{
+    padding: 10px 0;
+    background-color: #1b91ff;
+    color:#FFF;
+    letter-spacing: normal;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+}
+
+.page h2 span{
+    font-size: 22px;
+}
+.page-4 .icp_content{
+    background-color: #e9f6ff;
+    margin: 30px 0;
+    height: 700px;
+    border-radius: 20px;
+    color:#FFF
+}
+
+.page-4 .icp_content p{
+    margin: 30px 0;
+    line-height: 2;
+    color:#000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.page-4 .img_box{
+    display: flex;
+    justify-content: center;  
+}
+.page-4 img{
+    width: 400px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border:3px solid gray
+}
+.page-4 .icp_content .coment{
+    font-size: 14px;
+}
+/* page-5 IRT기술소개*/
+.page-5 {
+    height:700px;
+}
+.page-5 p{
+    margin: 20px 0 10px;
+    line-height:1.8;
+}
+.page-5 .irt_imgbox{
+    position: relative;
+    width: 100%;
+    height: 380px;
+
+}
+.page-5 .irt_imgbox .graph_img{
+    width: 100%;
+    margin-top: 50px;
+
+}
+.page-5 .irt_imgbox .char_img{
+    position: absolute;
+    width: 150px;
+    top: 220px;
+    left: 20px;
+}
+
+.page-6 {
+    height:1000px;
+}
+
+.page-6 p{
+    margin: 30px;
+    line-height: 1.7;
+
+}
+
+.page-6 .stt_flexbox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: 6px solid red; */
+}
+.page .stt_contentbox{
+    /* border:3px solid purple; */
+}
+
+.page .stt_contentbox h4{
+    font-family: 'yg-jalnan';
+    font-size: 26px;
+    background-color: #6195FF;
+    color:#FFF;
+    border-radius: 30px;
+    width: 200px;
+    margin: 0 auto 20px;
+    line-height: 2.5;
+
+}
+
+.page .stt_contentbox img{
+    width: 270px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+@media (max-width:480px) { /* 모바일용 */
+    body { 
+        background-color: #FFF;
+    }
+        .pc{
+            display: none !important
+        };        
+        
+        .pages{
+            border: 1px solid transparent;
+        }
+
+        .page {
+            width: auto;
+        }
+
+        .main_ban{
+            padding-top: 55px;
+        }
+        
+        .wrap{
+            width:96%;
+        }
+        
+        .flexbox{
+            margin-top: 0;
+            display: block;
+        }
+        /* page-1 밀크T Genia */
+        .page-1{
+            height: 600px;
+        }
+   
+        .page-1 h3{
+            margin: 20px 0;
+        }
+        .page-1 .insAfter{
+            margin-top: 0;
+            display: block;
+            overflow: hidden;
+        }
+        .page-1 div{
+            margin: 0 10px;
+        }
+        .page-1 .insAfter h4{
+            font-size: 20px;
+        }
+
+        .page-1 .insAfter img{
+            margin: 20px 0;
+        }
+
+        /* page-2 AI맞춤학습 프로세스 */
+        .page-2 {
+            height:60vh;
+        }
+        .page-2 h3{
+            margin-top: 20px 0;
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        .page-2 img{
+            width: 90%;
+            border-radius: 20px;
+        }
+
+/* page-3 Knowledge Tracing*/
+.page-3 {
+    height: 120vh;
+}
+
+.page-3 .kt_wrap .kt_contentbox{
+    margin: 5px;
+    width: 90%;
+    height: 25vh;
+    border-radius: 15px;
+    text-align: left;
+    background-color:#6195FF;
+    color:#FFF;
+}
+.page-3 .kt_wrap ..kt_contentbox h3{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'yg-jalnan';
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+.page-3 .kt_wrap .kt_contentbox p{
+  font-size: 16px;
+  line-height: 24px;
+}
+/* page-4 ICP기술소개*/
+.page-4 {
+    height: 800px;
+}
+
+.page-4 h2 span{
+    font-size: 24px;
+    letter-spacing: normal;
+}
+
+.page-4 h4{
+    padding: 20px;
+    font-size: 22px;
+}
+.page-4 .icp_content{
+    margin: 0;
+    padding: 0;
+    height: 720px;
+}
+
+.page-4 .icp_content p{
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+.page-4 .img_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.page-4 img{
+    width: 90%;
+    margin: 5px;
+    border-radius: 20px;
+    border:3px solid gray
+}
+.page-4 .icp_content .comment{
+    font-size: 14px;
+}
+
+.page-5 h2 span{
+    font-size: 22px;
+    letter-spacing: normal;
+}
+    
+    
+   
+}
+
+    
+
+
+
+    @media (min-width:481px) { /*PC용*/
+    
+    .mob{display: none};
+    }

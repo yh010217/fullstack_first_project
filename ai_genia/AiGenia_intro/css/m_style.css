@@ -1,0 +1,60 @@
+@media (max-width:480px) { /* 모바일용 */
+.pc{display: none !important;}
+.wrap { width:94%;}    
+
+/* header&footer */    
+
+
+/* index */
+#main{height: auto; padding-top: 55px;}
+#main img{width: 100%;}
+
+
+
+
+#rcm{margin-top: 50px;}
+#rcm h2{font-size: 30px;}
+#rcm .flexbox{flex-wrap: wrap; margin-bottom:20px;}
+#rcm .flexbox div{ margin:0; width: 48%; height: 300px; margin: 3px; border-radius:0; overflow: hidden;}
+#rcm .flexbox div:hover img{transform: scale(1);  }
+#rcm .flexbox div img { border-radius: 0px; transition: 0.3s; width:90%}
+
+#trs{background: #FFF; text-align: center; padding: 60px;}
+#trs h2{font:1.2rem 'jalnan';}
+#trs span{color:#5900d7; font-size: 50px;}
+#trs p{font-size:1.2rem; margin-bottom: 30px;}
+#trs img {  width: 100%;}
+
+#prk{background-color: #5900d7;  height: auto; text-align: center; color:#FFF; font-weight: 400; padding-bottom: 30px;}
+#prk h2{font-size:32px; padding-top:50px;}
+#prk p{font-size:18px; padding-top: 10px;}
+
+#prk .flexbox{display: flex; flex-wrap: wrap; border: 1px; justify-content: center; margin: 20px 0;}
+#prk .flexbox div{margin: 10px 10px 0 10px;}
+#prk .flexbox div img{ width: 100%;}
+
+#prk a:link, #prk a:visited{border: 1px solid #f6f6f6;font:20px 'pretendard'; padding: 3px 7px;display: block;width: 150px; line-height: 30px; margin: 50px auto; transition: 0.2s;}
+#prk a:hover{background: #F6F6F6; color:#333;}
+    
+#trs{padding: 30px;}
+
+
+#trs img{margin:0; width: 100%;}
+
+#fes{text-align:center; margin-top: 70px;}
+#fes h2{font:26px 'jalnan'; margin: 20px 0;}
+#fes span{color:#5900d7}
+#fes .flexbox{display: flex; justify-content: center;}
+#fes .flexbox img{ width: 100%;}
+    
+    
+    
+    
+}
+
+
+@media (min-width:801px) { /* PC용 */
+.mob{display: none !important;}
+    
+    
+} 
