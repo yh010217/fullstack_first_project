@@ -1,479 +1,486 @@
-body {
-    margin: 0;
-}
-
-#head_cont_wrap {
-    width: 100%;
-    height: 140vh; /*추후 조정*/
-}
-
-#head_cont {
-    position: fixed;
-    z-index: 1;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-header {
-    width: 100%;
-    height: 30px;
-    border-bottom: 1px solid silver;
-    padding: 2vh 0;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 0; /*head_cont 에 대한 flex-grow*/
-}
-
-#title {
-    height: 100%;
-    width: 155px;
-    padding-left: 15px;
-    display: inline-block;
-}
-
-#title > img[src$="milkT.jpg"] {
-    display: inline-block;
-    width: auto;
-    height: 100%;
-}
-
-#title > p {
-    display: inline-block;
-    color: #434343;
-    margin: 0;
-    font-size: 1.3rem;
-    position: relative;
-    top: -8px;
-    font-weight: 900;
-}
-
-header > nav {
-    display: inline-block;
-    width: 70%;
-}
-
-header > nav > ul {
-    list-style: none;
-    padding-left: 0;
-    position: relative;
-    top: -8px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header > nav > ul > li {
-    display: inline-block;
-    font-weight: 700;
-    color: #393939;
-}
-
-header > #login_page > p {
-    width: 120px;
-    border: 2px solid blue;
-    color: blue;
-    margin-right: 15px;
-    padding: 5px 0;
-    text-align: center;
-    border-radius: 20px;
-    position: relative;
-    top: -15px;
-}
-
-/*위에까지가 헤더*/
-.container {
-    flex-grow: 1; /*head_cont 에 대한 flex-grow*/
-    /*border: 2px solid silver;*/
-    /*height: 85vh;*/
-    /* width: 100vw; */
-    overflow: hidden;
-    display: flex;
-}
-
-
-.container > #main_section {
+@media screen and (min-width:768px) {
+    body {
+        margin: 0;
+    }
     
-    background-color:white;
-    flex-grow: 1;
-    overflow-y: scroll;
-    padding-left: 8px;
-}
-
-#main_section > div {
-    width: 100%;
-    /*height: auto;*/
-    /*height: 400px;*/
+    #head_cont_wrap {
+        width: 100%;
+        height: 140vh; /*추후 조정*/
+    }
     
-    background-color: rgb(244, 251, 253);
-    position: relative;
-}
-
-#main_section > #section1 {
-    position: relative;
-}
-@font-face {
-    font-family: 'CookieRunBlack';
-    src: url(../font/CookieRunBlack.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-#section1>p{
-    position:absolute;
-    /* font-size: 250%; */
-    font-size: 3.8vw;
-    font-family: 'CookieRunBlack';
-    z-index: 10;
-
-    animation-name:text_animation;
-    animation-duration:1s;
-    animation-timing-function: linear;
-}
-#section1>#s1p1{
-    left:44.8%;
-    top:20%;
-    color:#60c5ff;
-}
-#section1>#s1p2{
-    left:40%;
-    top:35%;
-    color:#f5fbff;
-}
-#section1>#s1p3{
-    left:44%;
-    top:47%;
-    color:#f5fbff;
-}
-@keyframes text_animation{
-    0%{
-        font-size: 0;
+    #head_cont {
+        position: fixed;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    100%{
-        font-size:3.8vw;
-    }
-}
-
-#main_section .animation_obj {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-}
-
-#main_section > #section1 .animation_obj img {
-    position: absolute;
-}
-
-#main_section > div img[src = "img/school_study_02/section1/visual_bg.png"] {
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-#main_section > div img[src = "img/school_study_02/section1/visual_compass.png"] {
-    width: 20%;
-    top: 28%;
-    left: 40%;
-    animation-name:compass_animation;
-    animation-duration:3s;
-    animation-timing-function: linear;
-}
-@keyframes compass_animation{
-    0%{
-        transform:rotate(30deg) ;
-    }
-    33%{
-        transform : rotate(0deg);
-    }
-    66%{
-        transform:rotate(30deg);
-    }
-    100%{
-        transform : rotate(0deg);
-    }
-}
-
-#main_section > div img[src = "img/school_study_02/section1/visual_obj01.png"] {
-    width: 30%;
-    top: 17%;
-    left: 35%;
-
     
-    animation-name:obj01_animation;
-    animation-duration:3s;
-    animation-timing-function: linear;
-}
-@keyframes obj01_animation{
-    0%{
-        transform:rotate(-40deg) rotateX(80deg);
+    header {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid silver;
+        padding: 2vh 0;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 0; /*head_cont 에 대한 flex-grow*/
     }
-    33%{
-        transform : rotate(0deg);
-    }
-    66%{
-        transform:rotate(-40deg);
-    }
-    100%{
-        transform : rotate(0deg);
-    }
-}
-
-#main_section > div img[src = "img/school_study_02/section1/visual_obj02.png"] {
-    width: 45%;
-    top: 1.7%;
-    left: 27.2%;
     
-    animation-name:obj02_animation;
-    animation-duration:3s;
-    animation-timing-function: linear;
-}
-
-@keyframes obj02_animation{
-    0%{
-        transform:rotate(-320deg) rotateX(80deg);
+    #title {
+        height: 100%;
+        width: 155px;
+        padding-left: 15px;
+        display: inline-block;
     }
-    66%{
-        transform:rotate(40deg);
+    
+    #title > img[src$="milkT.jpg"] {
+        display: inline-block;
+        width: auto;
+        height: 100%;
     }
-    100%{
-        transform : rotate(0deg);
+    
+    #title > p {
+        display: inline-block;
+        color: #434343;
+        margin: 0;
+        font-size: 1.3rem;
+        position: relative;
+        top: -8px;
+        font-weight: 900;
     }
-}
-
-#main_section > #section2 {
-    display: inline-block;
-    width: 100%;
-    height: 50vh;
-    background-color: #6A6A6A;
-    text-align: center;
-    font-family: 'omyuPretty';
-}
-
-@font-face {
-    font-family: 'omyuPretty';
-    src: url(../font/omyuPretty.ttf);
-}
-#section2>#s2p1{
-    font-size: 1.2rem;
-    position:relative;
-    top:15%;
-    color : white;
-}
-
-#section2>#s2p2{
-    font-size: 2rem;
-    position:relative;
-    top:15%;
-    color : white;
-    font-weight: 900;
-    font-family: CookieRunBlack;
-}
-#section2>#s2p2>span{
-    color:#60c5ff;
-}
-
-#main_section > .normal_section {
-    width: 100%;
-    aspect-ratio: 4/3;
-    border-radius: 30px;
-    box-shadow: 5px 10px 5px -5px #d1dee4 ;
-    text-align: center;
-
-    margin-bottom:10px;
-}
-
-#main_section> #section3{
-    background: linear-gradient(to left bottom, white 0 10% ,#f7fbdb);
-}
-#main_section>#section4{
-    background: linear-gradient(to left bottom, white 0 10% ,#DBF2FB);
-}
-#main_section>#section5{
-    background: linear-gradient(to left bottom, white 0 10% ,#f1dbfb);
-}
-
-#main_section>#section6{
-    background: linear-gradient(to bottom, rgb(202, 233, 255),#c4dbff);
-    width:100%;
-    height:10rem;
-    text-align: center;
-    padding-top:1rem;
-}
-#main_section>#section6 p{
-    font-family: CookieRunBlack;
-    color:#6c6c6c;
-    font-size: 2.2rem;
-}
-#main_section>#section6 p span{
-    color:#52c0ff;
-}
-
-#main_section .normal_section .slide_guide{
-    text-align: left;
-    position:relative;
-}
-
-#main_section .normal_section .slide_guide p{
-    margin-top:0;
-    margin-bottom: 0;
-}
-
-#main_section .normal_section .slide_guide img{
-    width:27%;
-    aspect-ratio: 6/5;
-    position:absolute;
-    right:0;
-    top:0
-}
-
-#main_section .normal_section .slide_guide .slide_guide_title{
-    font-size: 5vw;
-    font-family: 'CookieRunBlack';
-}
-#main_section .normal_section .slide_guide .slide_guide_text{
-    font-size:3vw;
-    font-family: omyuPretty;
-}
-
-/*슬라이더 틀 시작*/
-.section_slide_window {
-    display: inline-block;
-    width: 85%;
-    height: 80%;
-    background-color: white;
-    border-radius: 5%;
-    margin-top: 10%;
-
-}
-
-.section_slide_window > .slide_title {
-    display: inline-block;
-    position: relative;
-    top: -5%;
-    background-color: #434343;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1rem;
-}
-
-.section_slide_window > .slide_guide {
-    width: 100%;
-    height: 30%;
-    padding-left: 10px;
-}
-
-.section_slide_window > .slide_slide {
-    text-align: left;
-    width: 100%;
-    height: 55%;
-    position: relative;
-
-    overflow: hidden;
-}
-
-.section_slide_window > .slide_slide .slide_slide_content {
-    height: 97%;
-    width: 4000px;
-    position:relative;
-    transition-duration: 1s;
-    display: inline-block;
-    /* border: 1px solid red; */
-}
-
-.section_slide_window > .slide_slide .slide_slide_content img {
-    height: 95%;
-    display: inline-block;
-    position: relative;
-}
-
-.slide_button>.button{
-    display: inline-block;
-    width:2vw;
-    height: 2vw;
-    border-radius: 1vw;
-    background-color: silver;
-}
-
-
-/*슬라이더 틀 끝*/
-/*mainsection_scrollbar 시작*/
-.container > #main_section::-webkit-scrollbar {
-    width: 8px;
-    background-color: silver;
-    border-radius: 5px;
-}
-
-.container > #main_section::-webkit-scrollbar-thumb {
-    width: 7px;
-    background-color: lightskyblue;
-    border-radius: 5px;
-}
-
-/*main_section scrollbar*/
-/*여기까지 main_section*/
-#advertise_right_button {
-    position: fixed;
-    right: 0
-}
-
-#advertise_right_button > img {
-    width: 50px;
-    height: 50px;
-}
-
-#advertise_right_button > p {
-    text-align: center;
-}
-
-.container > .advertise_right {
-    display: flex;
-    width: 0;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    height: 100%;
-}
-
-.showAd {
-    height: 100%;
-    min-width: 80px;
-    max-width: 80px;
-}
-
-.milkT_adv {
-    width: 70px;
-    height: 150px;
-    border-radius: 15px;
-    border: 1px solid silver;
-    background-color: lightskyblue;
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*-------------여기까지 container 끝---------------------*/
-/*footer 시작*/
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-top: 5vh;
-    background-color: lightgrey;
-    position: relative;
-    z-index: 2;
-}
-
-footer > img {
-    height: 30px;
-}
-
-footer > p {
-    margin: 0 2vw 3vh;
-    color: #6A6A6A;
-    font-size: 0.8rem;
+    
+    header > nav {
+        display: inline-block;
+        width: 70%;
+    }
+    
+    header > nav > ul {
+        list-style: none;
+        padding-left: 0;
+        position: relative;
+        top: -8px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    header > nav > ul > li {
+        display: inline-block;
+        font-weight: 700;
+        color: #393939;
+    }
+    
+    header > #login_page > p {
+        width: 120px;
+        border: 2px solid blue;
+        color: blue;
+        margin-right: 15px;
+        padding: 5px 0;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+        top: -15px;
+    }
+    
+    header #mobile_btn{
+        display:none;
+    }
+    
+    /*위에까지가 헤더*/
+    .container {
+        flex-grow: 1; /*head_cont 에 대한 flex-grow*/
+        /*border: 2px solid silver;*/
+        /*height: 85vh;*/
+        /* width: 100vw; */
+        overflow: hidden;
+        display: flex;
+    }
+    
+    
+    .container > #main_section {
+        
+        background-color:white;
+        flex-grow: 1;
+        overflow-y: scroll;
+        padding-left: 8px;
+    }
+    
+    #main_section > div {
+        width: 100%;
+        /*height: auto;*/
+        /*height: 400px;*/
+        
+        background-color: rgb(244, 251, 253);
+        position: relative;
+    }
+    
+    #main_section > #section1 {
+        position: relative;
+    }
+    @font-face {
+        font-family: 'CookieRunBlack';
+        src: url(../font/CookieRunBlack.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    #section1>p{
+        position:absolute;
+        /* font-size: 250%; */
+        font-size: 3.8vw;
+        font-family: 'CookieRunBlack';
+        z-index: 10;
+    
+        animation-name:text_animation;
+        animation-duration:1s;
+        animation-timing-function: linear;
+    }
+    #section1>#s1p1{
+        left:44.8%;
+        top:20%;
+        color:#60c5ff;
+    }
+    #section1>#s1p2{
+        left:40%;
+        top:35%;
+        color:#f5fbff;
+    }
+    #section1>#s1p3{
+        left:44%;
+        top:47%;
+        color:#f5fbff;
+    }
+    @keyframes text_animation{
+        0%{
+            font-size: 0;
+        }
+        100%{
+            font-size:3.8vw;
+        }
+    }
+    
+    #main_section .animation_obj {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    
+    #main_section > #section1 .animation_obj img {
+        position: absolute;
+    }
+    
+    #main_section > div img[src = "img/school_study_02/section1/visual_bg.png"] {
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    #main_section > div img[src = "img/school_study_02/section1/visual_compass.png"] {
+        width: 20%;
+        top: 28%;
+        left: 40%;
+        animation-name:compass_animation;
+        animation-duration:3s;
+        animation-timing-function: linear;
+    }
+    @keyframes compass_animation{
+        0%{
+            transform:rotate(30deg) ;
+        }
+        33%{
+            transform : rotate(0deg);
+        }
+        66%{
+            transform:rotate(30deg);
+        }
+        100%{
+            transform : rotate(0deg);
+        }
+    }
+    
+    #main_section > div img[src = "img/school_study_02/section1/visual_obj01.png"] {
+        width: 30%;
+        top: 17%;
+        left: 35%;
+    
+        
+        animation-name:obj01_animation;
+        animation-duration:3s;
+        animation-timing-function: linear;
+    }
+    @keyframes obj01_animation{
+        0%{
+            transform:rotate(-40deg) rotateX(80deg);
+        }
+        33%{
+            transform : rotate(0deg);
+        }
+        66%{
+            transform:rotate(-40deg);
+        }
+        100%{
+            transform : rotate(0deg);
+        }
+    }
+    
+    #main_section > div img[src = "img/school_study_02/section1/visual_obj02.png"] {
+        width: 45%;
+        top: 1.7%;
+        left: 27.2%;
+        
+        animation-name:obj02_animation;
+        animation-duration:3s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes obj02_animation{
+        0%{
+            transform:rotate(-320deg) rotateX(80deg);
+        }
+        66%{
+            transform:rotate(40deg);
+        }
+        100%{
+            transform : rotate(0deg);
+        }
+    }
+    
+    #main_section > #section2 {
+        display: inline-block;
+        width: 100%;
+        height: 50vh;
+        background-color: #6A6A6A;
+        text-align: center;
+        font-family: 'omyuPretty';
+    }
+    
+    @font-face {
+        font-family: 'omyuPretty';
+        src: url(../font/omyuPretty.ttf);
+    }
+    #section2>#s2p1{
+        font-size: 1.2rem;
+        position:relative;
+        top:15%;
+        color : white;
+    }
+    
+    #section2>#s2p2{
+        font-size: 2rem;
+        position:relative;
+        top:15%;
+        color : white;
+        font-weight: 900;
+        font-family: CookieRunBlack;
+    }
+    #section2>#s2p2>span{
+        color:#60c5ff;
+    }
+    
+    #main_section > .normal_section {
+        width: 100%;
+        aspect-ratio: 4/3;
+        border-radius: 30px;
+        box-shadow: 5px 10px 5px -5px #d1dee4 ;
+        text-align: center;
+    
+        margin-bottom:10px;
+    }
+    
+    #main_section> #section3{
+        background: linear-gradient(to left bottom, white 0 10% ,#f7fbdb);
+    }
+    #main_section>#section4{
+        background: linear-gradient(to left bottom, white 0 10% ,#DBF2FB);
+    }
+    #main_section>#section5{
+        background: linear-gradient(to left bottom, white 0 10% ,#f1dbfb);
+    }
+    
+    #main_section>#section6{
+        background: linear-gradient(to bottom, rgb(202, 233, 255),#c4dbff);
+        width:100%;
+        height:10rem;
+        text-align: center;
+        padding-top:1rem;
+    }
+    #main_section>#section6 p{
+        font-family: CookieRunBlack;
+        color:#6c6c6c;
+        font-size: 2.2rem;
+    }
+    #main_section>#section6 p span{
+        color:#52c0ff;
+    }
+    
+    #main_section .normal_section .slide_guide{
+        text-align: left;
+        position:relative;
+    }
+    
+    #main_section .normal_section .slide_guide p{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    
+    #main_section .normal_section .slide_guide img{
+        width:27%;
+        aspect-ratio: 6/5;
+        position:absolute;
+        right:0;
+        top:0
+    }
+    
+    #main_section .normal_section .slide_guide .slide_guide_title{
+        font-size: 5vw;
+        font-family: 'CookieRunBlack';
+    }
+    #main_section .normal_section .slide_guide .slide_guide_text{
+        font-size:3vw;
+        font-family: omyuPretty;
+    }
+    
+    /*슬라이더 틀 시작*/
+    .section_slide_window {
+        display: inline-block;
+        width: 85%;
+        height: 80%;
+        background-color: white;
+        border-radius: 5%;
+        margin-top: 10%;
+    
+    }
+    
+    .section_slide_window > .slide_title {
+        display: inline-block;
+        position: relative;
+        top: -5%;
+        background-color: #434343;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1rem;
+    }
+    
+    .section_slide_window > .slide_guide {
+        width: 100%;
+        height: 30%;
+        padding-left: 10px;
+    }
+    
+    .section_slide_window > .slide_slide {
+        text-align: left;
+        width: 100%;
+        height: 55%;
+        position: relative;
+    
+        overflow: hidden;
+    }
+    
+    .section_slide_window > .slide_slide .slide_slide_content {
+        height: 97%;
+        width: 4000px;
+        position:relative;
+        transition-duration: 1s;
+        display: inline-block;
+        /* border: 1px solid red; */
+    }
+    
+    .section_slide_window > .slide_slide .slide_slide_content img {
+        height: 95%;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .slide_button>.button{
+        display: inline-block;
+        width:2vw;
+        height: 2vw;
+        border-radius: 1vw;
+        background-color: silver;
+    }
+    
+    
+    /*슬라이더 틀 끝*/
+    /*mainsection_scrollbar 시작*/
+    .container > #main_section::-webkit-scrollbar {
+        width: 8px;
+        background-color: silver;
+        border-radius: 5px;
+    }
+    
+    .container > #main_section::-webkit-scrollbar-thumb {
+        width: 7px;
+        background-color: lightskyblue;
+        border-radius: 5px;
+    }
+    
+    /*main_section scrollbar*/
+    /*여기까지 main_section*/
+    #advertise_right_button {
+        position: fixed;
+        right: 0
+    }
+    
+    #advertise_right_button > img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #advertise_right_button > p {
+        text-align: center;
+    }
+    
+    .container > .advertise_right {
+        display: flex;
+        width: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+    }
+    
+    .showAd {
+        height: 100%;
+        min-width: 80px;
+        max-width: 80px;
+    }
+    
+    .milkT_adv {
+        width: 70px;
+        height: 150px;
+        border-radius: 15px;
+        border: 1px solid silver;
+        background-color: lightskyblue;
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*-------------여기까지 container 끝---------------------*/
+    /*footer 시작*/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-top: 5vh;
+        background-color: lightgrey;
+        position: relative;
+        z-index: 2;
+    }
+    
+    footer > img {
+        height: 30px;
+    }
+    
+    footer > p {
+        margin: 0 2vw 3vh;
+        color: #6A6A6A;
+        font-size: 0.8rem;
+    }
+    
 }

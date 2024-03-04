@@ -1,3 +1,4 @@
+@media screen and (min-width:1024px){
 #main_section{
     scroll-behavior: smooth;
 }
@@ -24,4 +25,22 @@
 
 html{
     scroll-behavior: smooth;
+}
+}
+
+
+@media screen and (max-width:1023px){
+    
+    #main_section_up_button {
+        display: none;
+    }
+
+    #main_section_down_button {
+        display:none;
+    }
+
+    #main_section_up_button>img,
+    #main_section_down_button>img {
+        display: none;
+    }
 }

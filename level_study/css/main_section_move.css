@@ -1,0 +1,47 @@
+@media screen and (min-width: 1024px) {
+    #main_section {
+        scroll-behavior: smooth;
+    }
+
+    #main_section_up_button {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 50px;
+    }
+
+    #main_section_down_button {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        right: 50px;
+    }
+
+    #main_section_up_button>img,
+    #main_section_down_button>img {
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media screen and (max-width:1023px){
+    
+    #main_section_up_button {
+        display: none;
+    }
+
+    #main_section_down_button {
+        display:none;
+    }
+
+    #main_section_up_button>img,
+    #main_section_down_button>img {
+        display: none;
+    }
+}

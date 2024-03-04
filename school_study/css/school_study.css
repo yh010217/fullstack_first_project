@@ -1,5 +1,4 @@
-@media screen and (min-width: 1024px),screen and (min-height: 1024px) and (orientation: landscape) {
-
+@media screen and (min-width: 1024px){
     body {
         margin: 0;
     }
@@ -85,6 +84,10 @@
         border-radius: 20px;
         position: relative;
         top: -15px;
+    }
+
+    header #mobile_btn{
+        display:none;
     }
 
 

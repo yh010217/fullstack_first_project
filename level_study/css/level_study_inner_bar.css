@@ -1,0 +1,40 @@
+#main_section .level_inner_bar{
+    position: absolute;
+    list-style: none;
+    display: inline-block;
+    border-radius: 2rem;
+    border:1px solid silver;
+    padding:0;
+
+    text-align: center;
+
+    right:80px;
+
+    transition-duration: 1s;
+}
+
+#main_section .level_inner_bar li{
+    padding:0.5rem 0.8rem;
+    display: inline-block;
+}
+#main_section .level_inner_bar li:hover{
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom,#e2f1fa 40% , #d2e3ff);
+    box-shadow:3px 3px 1px -1px #bacad4;
+}
+
+#main_section .level_inner_bar li a{
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+
+
+.showBar{
+    top:70px;
+    visibility: visible;
+}
+.hideBar{
+    top:0;
+    visibility: hidden;
+}
