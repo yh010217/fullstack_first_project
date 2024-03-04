@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px){
+@media screen and (max-width:767px){
     body {
         margin: 0;
     }
@@ -54,9 +54,8 @@
     }
 
     header > nav {
-        display: inline-block;
-
-        width: 70%;
+        display: none;
+        
     }
 
     header > nav > ul {
@@ -74,6 +73,10 @@
         color: #393939;
     }
 
+    header > #login_page{
+        display:none;
+    }
+
     header > #login_page > p {
         width: 120px;
         border: 2px solid blue;
@@ -86,8 +89,11 @@
         top: -15px;
     }
 
-    header #mobile_btn{
-        display:none;
+    header > #mobile_btn img{
+        width:30px;
+        height:30px;
+        position:relative;
+        left:-8px;
     }
 
 
@@ -96,37 +102,21 @@
         flex-grow: 1; /*head_cont 에 대한 flex-grow*/
         border: 2px solid silver;
         /*height: 85vh;*/
-        /* width: 100vw; */
-        overflow: hidden;
-        display: flex;
+        width: 100vw;
+        overflow: scroll;
+        /*display: flex;
+        flex-direction: column;*/
     }
 
 
     /*left advertise 시작*/
     #advertise_left_button {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-    }
-
-    #advertise_left_button > img {
-        width: 50px;
-        height: 50px;
-    }
-
-    #advertise_left_button > p {
-        text-align: center;
+        display: none;
     }
 
 
     .container > .advertise_left {
-        display: flex;
-        width: 0;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-
-        height: 100%;
+        display: none;
     }
 
 
@@ -134,7 +124,9 @@
     /*inner tab 시작*/
     .container > .inner_tab_wrap {
         width: 0;
-        background-color: antiquewhite;
+        position: absolute;
+
+        display: none;
     }
 
     .inner_tab_wrap_open {
@@ -142,12 +134,12 @@
     }
 
     .inner_tab_open {
-        transform: translateY(290px);
+        transform: translateY(300px);
         transition-duration: 1s;
     }
 
     .inner_tab_close {
-        transform: translateY(-290px);
+        transform: translateY(-40px);
         transition-duration: 1s;
     }
 
@@ -176,6 +168,7 @@
         flex-direction: column;
         padding-left: 0;
         padding-right: 10px;
+        padding-bottom: 60px;
     }
 
     .container > .inner_tab_wrap > .inner_tab > nav > ul > li {
@@ -200,7 +193,7 @@
 
     .container > .inner_tab_wrap > .inner_tab > nav > ul > li > img {
         box-sizing: border-box;
-        padding:15px;
+        padding: 15px;
         height: 70px;
         width: 70px;
         display: inline-block;
@@ -212,7 +205,7 @@
         margin: auto auto;
     }
 
-    .container > .inner_tab_wrap > .inner_tab > #inner_tab_button {
+    .container > .inner_tab_wrap > .inner_tab > #inner_tab_button, #inner_tab_button2{
         width: 100%;
         height: 10px;
         background-color: lightgrey;
@@ -224,8 +217,12 @@
     }
 
     /*여기까지가 inner tab*/
+
+    /*여기서부터 main_section*/
     .container > #main_section {
-        background-color: antiquewhite;
+        
+        background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
+        
         flex-grow: 1;
         text-align: center;
         overflow-y: scroll;
@@ -237,9 +234,10 @@
 
     .container > #main_section::-webkit-scrollbar {
         width: 8px;
-        background-color: antiquewhite;
+        background-color: white;
         border-radius: 5px;
     }
+
 
     .container > #main_section::-webkit-scrollbar-thumb {
         width: 7px;
@@ -247,16 +245,16 @@
         border-radius: 5px;
     }
 
+
+
     .container > #main_section > .main_section_img_wrap {
         display: inline-block;
-
         height: 100%;
         width: 100%;
-
     }
-
     .container > #main_section > .main_section_img_wrap > img {
         display: inline-block;
+        width: 100%;
     }
 
     .img_height100 {
@@ -272,53 +270,25 @@
 
     /*여기까지 main_section*/
     #advertise_right_button {
-        position: fixed;
-        right: 0
+        display:none;
     }
-
-    #advertise_right_button > img {
-        width: 50px;
-        height: 50px;
-    }
-
-    #advertise_right_button > p {
-        text-align: center;
-    }
-
 
     .container > .advertise_right {
+        display: none;
+    }
+    #main_section .advertise_bottom{
+        width:100%;
+        height: 15vh;
         display: flex;
-        width: 0;
-        flex-direction: column;
         justify-content: center;
-        gap: 20px;
-
-        height: 100%;
+        gap:2vw;
     }
-
-    .showAd {
-        height: 100%;
-        background-color: antiquewhite;
-        min-width: 80px;
-        max-width: 80px;
-
-    }
-
-    .milkT_adv {
-        width: 70px;
-        height: 150px;
+    #main_section .advertise_bottom .bottom_ad{
+        width:300px;
+        height: 100px;
+        border:1px solid silver;
         border-radius: 15px;
-        border: 1px solid silver;
         background-color: lightskyblue;
-
-        text-decoration: none;
-        color: white;
-        font-weight: 900;
-        text-align: center;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
 
@@ -346,9 +316,4 @@
         font-size: 0.8rem;
     }
 
-    .advertise_bottom{
-        display: none;
-    }
 }
-
-

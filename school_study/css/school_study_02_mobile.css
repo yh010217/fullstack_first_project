@@ -1,23 +1,24 @@
-@media screen and (min-width:768px) {
+@media screen and (max-width:767px){
     body {
         margin: 0;
     }
-    
+
     #head_cont_wrap {
         width: 100%;
-        height: 140vh; /*추후 조정*/
+        height: 140vh;
     }
-    
+
     #head_cont {
         position: fixed;
         z-index: 1;
+
         height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    
+
     header {
         width: 100%;
         height: 30px;
@@ -25,22 +26,23 @@
         padding: 2vh 0;
         display: flex;
         justify-content: space-between;
+
         flex-grow: 0; /*head_cont 에 대한 flex-grow*/
     }
-    
+
     #title {
         height: 100%;
         width: 155px;
         padding-left: 15px;
         display: inline-block;
     }
-    
+
     #title > img[src$="milkT.jpg"] {
         display: inline-block;
         width: auto;
         height: 100%;
     }
-    
+
     #title > p {
         display: inline-block;
         color: #434343;
@@ -50,12 +52,12 @@
         top: -8px;
         font-weight: 900;
     }
-    
+
     header > nav {
-        display: inline-block;
-        width: 70%;
+        display: none;
+        
     }
-    
+
     header > nav > ul {
         list-style: none;
         padding-left: 0;
@@ -64,13 +66,17 @@
         display: flex;
         justify-content: space-evenly;
     }
-    
+
     header > nav > ul > li {
         display: inline-block;
         font-weight: 700;
         color: #393939;
     }
-    
+
+    header > #login_page{
+        display:none;
+    }
+
     header > #login_page > p {
         width: 120px;
         border: 2px solid blue;
@@ -82,10 +88,14 @@
         position: relative;
         top: -15px;
     }
-    
-    header #mobile_btn{
-        display:none;
+
+    header > #mobile_btn img{
+        width:30px;
+        height:30px;
+        position:relative;
+        left:-8px;
     }
+
     
     /*위에까지가 헤더*/
     .container {
@@ -419,7 +429,8 @@
     /*여기까지 main_section*/
     #advertise_right_button {
         position: fixed;
-        right: 0
+        right: 0;
+        display:none;
     }
     
     #advertise_right_button > img {
@@ -432,12 +443,13 @@
     }
     
     .container > .advertise_right {
-        display: flex;
+        display: none;
+       /* display: flex;
         width: 0;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        height: 100%;
+        height: 100%; */
     }
     
     .showAd {
@@ -482,5 +494,5 @@
         color: #6A6A6A;
         font-size: 0.8rem;
     }
-    
+
 }
