@@ -211,7 +211,6 @@
 
     .board{
         background-color: whitesmoke;
-        opacity: 0.9;
         width: 465px;
         height: 460px;
         position: absolute;
@@ -328,12 +327,53 @@
         color: whitesmoke;
     }
 
-    form img{
+    .mini_dumi{
         position: relative;
-        left: 100px;
+        left: 190px;
+        top: -50px;
+        width: 90px;
+        height: 50px;
+    }
+
+    .character_left{
+        position: relative;
+        top: 190px;
+        left: -120px;
+        width: 150px;
+        z-index: -1;
+    }
+
+    .character_right{
+        position: relative;
+        top: 100px;
+        left: 440px;
+        width: 130px;
+        z-index: -1;
+    }
+
+    .dialog_bg{
+        display: none;
+        position: relative;
         top: 430px;
-        width: 200px;
-        z-index: -50;
+        left: 60px;
+        width: 300px;
+        z-index: -1;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+
+    .content {
+        position: absolute;
+        animation: fadeInUp 1s;
     }
 
 

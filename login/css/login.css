@@ -267,6 +267,22 @@
         z-index: -1;
     }
 
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 0.9;
+            transform: translateZ(0);
+        }
+    }
+
+    .content {
+        position: absolute;
+        animation: fadeInUp 1s;
+    }
+
 
     /* 메인 페이지 CSS 끝 */
 
