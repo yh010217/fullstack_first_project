@@ -16,12 +16,16 @@
 *{ 
     margin: 0;
     padding: 0;
-    font-family: 'Pretendard-Regular';
     box-sizing: border-box;
 
 }
+
+html{
+    width: 100%;
+}
 body{
     background-color: #f0f0f0;
+    font-family: 'Pretendard-Regular';
 }
 
 li{
@@ -65,6 +69,11 @@ img{
 
 }
 
+.main_ban{
+    padding-top: 86px;
+    width: 100%;
+}
+
 .main_ban img{
   width: 100%;
 }
@@ -103,30 +112,13 @@ h2{
     margin-top: 5px;
     margin-bottom: 30px;
 }
-.page-1 .insAfter{
+.page-1 .insAfter ul{
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
-
-.page-1 .insAfter .insAfrer-box{
+.page-1 div{
     margin: 0 10px;
-}
-
-
-.page-1 .hoverbox{
-    overflow: hidden;
-    border-radius: 20px;
-    margin: 30px 0;
-}
-
-.page-1 .hoverbox img{
-    transform: scale(1);
-    transition: 0.3s;
-    border-radius: 10px;
-}
-.page-1 .hoverbox:hover img{
-    transform: scale(1.1);
 }
 
 .page-1 span{
@@ -134,7 +126,10 @@ h2{
     color:#1D67FF;
     font-size: 20px;
 }
-
+.page-1 .insAfter img{
+    margin: 20px 0;
+    border-radius: 20px;
+}
 
 .page-1 .insAfter p{
     align-items: center;
@@ -189,24 +184,6 @@ h2{
     background-color:#6195FF;
     color:#FFF;
 }
-.page-3 .kt_wrap .kt_contentbox:hover{
-    transition: 0.2s;
-    background-color: #192c7c;
-}
-
-.kt_contentbox p{
-    transform: scale(1);
-    font-size: 16px;
-    line-height: 30px;
-    padding-left: 15px;
-}
-
-.kt_contentbox:hover p{
-    transition: 0.2s;
-    transform: scale(1.05);
-    color:#FFF;
-    
-}
 
 .page-3 .kt_imgbox img{
    width: 150px;
@@ -228,8 +205,10 @@ h2{
     line-height: 25px;
     padding-bottom: 40px;
 }
-
-
+.page-3 .kt_wrap .kt_contentbox p{
+  font-size: 18px;
+  line-height: 30px;
+}
 /* page-4 ICP기술소개*/
 .page-4 {
     height:700px;
@@ -320,6 +299,9 @@ h2{
     text-align: center;
     /* border: 6px solid red; */
 }
+.page .stt_contentbox{
+    /* border:3px solid purple; */
+}
 
 .page .stt_contentbox h4{
     font-family: 'yg-jalnan';
@@ -355,6 +337,10 @@ h2{
         .page {
             width: auto;
         }
+
+        .main_ban{
+            padding-top: 55px;
+        }
         
         .wrap{
             width:96%;
@@ -373,14 +359,19 @@ h2{
             margin: 20px 0;
         }
         .page-1 .insAfter{
-            margin-top: 20px;
-           
+            margin-top: 0;
+            display: block;
+            overflow: hidden;
         }
-
-        
-
+        .page-1 div{
+            margin: 0 10px;
+        }
         .page-1 .insAfter h4{
             font-size: 20px;
+        }
+
+        .page-1 .insAfter img{
+            margin: 20px 0;
         }
 
         /* page-2 AI맞춤학습 프로세스 */
@@ -412,7 +403,7 @@ h2{
     background-color:#6195FF;
     color:#FFF;
 }
-.page-3 .kt_wrap .kt_contentbox h3{
+.page-3 .kt_wrap ..kt_contentbox h3{
     font-weight: bold;
     font-size: 20px;
     font-family: 'yg-jalnan';
