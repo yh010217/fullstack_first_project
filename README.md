@@ -7,8 +7,10 @@
 - 프로젝트 주제: 천재교육 홍보 사이트 개선
 - 프로젝트 기간: 2024-02-26~2024-03-04
 
+
 ### ❄️ 팀 구성
 ![슬라이드4](https://github.com/tongueEye/MilkT_Renewal_Project/assets/109783402/18354514-462a-419c-a5ec-bb8db44f59f7)
+
 
 ### ❄️ 프로젝트 일정
 ![슬라이드5](https://github.com/tongueEye/MilkT_Renewal_Project/assets/109783402/f5e706fb-71eb-4bd1-9990-2675f45d84df)
@@ -20,6 +22,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
 
 ### ❄️ 컨셉
 ![슬라이드7](https://github.com/tongueEye/MilkT_Renewal_Project/assets/109783402/9587f2e4-bfb8-477e-9698-9525ed860326)
@@ -60,7 +63,8 @@
 ![슬라이드34](https://github.com/tongueEye/MilkT_Renewal_Project/assets/109783402/17d7b084-a146-4a4a-88f8-bafee3a9677b)
 
 
-### ❄️ 시연 영상
+### ❄️ 빌드 페이지 및 시연 영상
+- [빌드 페이지 바로가기>](https://tongueeye.github.io/MilkT_Renewal_Project/) 
 <a href="https://youtu.be/rUwgswNoWtg?feature=shared">
   <img src="http://img.youtube.com/vi/rUwgswNoWtg/0.jpg" alt="Watch the video">
 </a>
