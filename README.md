@@ -1,5 +1,7 @@
 # 🐻‍❄️밀크T 초등 웹 사이트 리뉴얼 프로젝트
 
+![슬라이드1](https://github.com/tongueEye/MilkT_Renewal_Project/assets/109783402/e3bf4880-96c0-4744-a34a-47af98c44202)
+
 ### 천재 교육 풀스택 5기 1차 프로젝트
 
 - 프로젝트 주제: 천재교육 홍보 사이트 개선
