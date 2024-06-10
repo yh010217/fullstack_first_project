@@ -204,9 +204,9 @@
     /*위에까지가 헤더*/
     .container {
         flex-grow: 1; /*head_cont 에 대한 flex-grow*/
-        
+        /*
         background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
-        
+        */
         /*height: 85vh;*/
         /* width: 100vw; */
         overflow: hidden;
@@ -248,7 +248,7 @@
     .container > .inner_tab_wrap {
         width: 0;
         
-        background-color: #f3fdff;
+      /*  background-color: #f3fdff;*/
     }
 
     .inner_tab_wrap_open {

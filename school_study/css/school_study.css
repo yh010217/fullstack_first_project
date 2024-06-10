@@ -244,8 +244,8 @@
     .container > .inner_tab_wrap {
         width: 0;
         /*background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
-        */
-        background-color: #f0fcff;
+        *//*
+        background-color: #f0fcff;*/
     }
 
     .inner_tab_wrap_open {
@@ -341,8 +341,10 @@
         text-align: center;
         overflow-y: scroll;
 
+        /*
 
         background-image: linear-gradient(to right top, #edfcff, #f0fcff, #f2fcff, #f5fdff, #f7fdff, #f9fdff, #fbfdff, #fcfdff, #fdfdff, #fefeff, #fefeff, #ffffff);
+        */
 
 
 
@@ -413,7 +415,7 @@
 
     .showAd {
         height: 100%;
-        background-color: #f0fcff;
+        /*background-color: #f0fcff;*/
         min-width: 80px;
         max-width: 80px;
 
